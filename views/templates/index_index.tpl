@@ -1,175 +1,102 @@
 <article>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-md-3 col-md-push-9">
-							<aside class="mas-datos">
-								<h3>Central Telefónica</h3>
-								<a class="telefono" href="#">+51 <span>(073) 343592</span></a>
-								<a class="telefono" href="#">+51 <span>(073) 343677</span></a>
-								<hr class="blanca-corta">
-								<h3>Horarios</h3>
-								<ul class="bullet2">
-									<li><a><strong>Consulta Externa</strong></a></li>
-										<table style="width:100%" class="table-horario">
-											<tr>
-												<td>Lunes a Viernes</td>
-												<td>08:00 am a 1:00 pm</td> 
-											</tr>
-											<tr>
-												<td></td>
-												<td>2:00 pm a 16:00 pm</td> 
-											</tr>
-											<tr>
-												<td>Sábados</td>
-												<td>08:00 am a 12:00 pm</td> 
-											</tr>
-										</table><br>
-									<li><a><strong>Visita Hospitalización</strong></a></li>
-										<p style="margin-left: 1em; color: #fff;">Todos los días de 15:00 a 17:00 pm. (Luego de transcurridos 15 días de hospitalización. Previa autorización médica).</p><br>
-									<li><a><strong>Farmacia</strong></a></li>
-										<table style="width:100%" class="table-horario">
-											<tr>
-												<td>Lunes a Viernes</td>
-												<td>08:00 am a 1:00 pm</td> 
-											</tr>
-											<tr>
-												<td></td>
-												<td>2:00 pm a 4:00 pm</td> 
-											</tr>
-											<tr>
-												<td>Sábados</td>
-												<td>08:00 am a 12:00 pm</td> 
-											</tr>
-										</table>
-								</ul>									
-							</aside>
-							<aside class="direccion">
-							  <h3>Dirección</h3>
-							  <p>Av. Cayetano Heredia 210 l Castilla l Piura l Perú</p>
-							</aside>
-							<section class="redes">
-								<div class="siguenos clearfix">
-									<h3 class="pull-left">SÍGUENOS</h3>
-									<ul class="pull-right">
-										<li class="fb">
-											<a href="https://www.facebook.com/centroderepososjdpiura" target="_blank" title="Síguenos en Facebook"></a>
-										</li>
-										<li class="tw">
-											<a href="https://twitter.com/crsjdpiura" target="_blank" title="Síguenos en Twitter">
-											</a>
-										</li>
-										<li class="yt">
-											<a href="https://www.youtube.com/channel/UCtGJmRisNLhgpvR8qxt28oA" target="_blank" title="Síguenos en YouTube"></a>
-										</li>
-										<li class="in">
-											<a href="https://www.linkedin.com/company/3121795?trk=tyah&trkInfo=tas%3Aorden%20hospital" target="_blank" title="Síguenos en Linked In"></a>
-										</li>
-										<li class="issuu">
-											<a href="https://issuu.com/septentrional" target="_blank" title="Síguenos en Issuu"></a>
-										</li>
-									</ul>
-								</div>								
-							</section>
-						</div>
-						<div class="col-xs-12 col-md-9 col-md-pull-3">
-							<div class="novedades">
-								<div class="row">
-									<div class="col-xs-6">
-										<h3 class="left">Novedades</h3>
-									</div>
-									<div class="col-xs-6 text-right">
-									   <a class="ver-todas" href="novedades.html">Ver todas<span>+</span></a>
-									</div>
-									<div class="col-xs-12">
-										<figure class="modulo-novedad e-nove">
-											<div class="row">
-												<div class="col-xs-12 col-md-4 text-center">
-													<a class="modulo-novedad__imagen" href="#" class="img" title="">
-														<img src="{$SERVER_IMG}servicios/home-seccion-destacada1.jpg" width="377" alt="" class="img-responsive margen">
-													</a>
-												</div>
-												<div class="col-xs-12 col-md-8">
-													<figcaption class="modulo-novedad__texto">
-														<h2>
-															<a href="#">
-																Centro Psicoterapéutico San Juan de Dios
-															</a>
-														</h2>
-														<span class="novedad__fecha"><strong>PROVINCIA | 2016</strong></span>
-														<hr class="gris-corta">
-														<p>Contamos con un moderno servicio dirigido a niños, adolescentes, adultos, familias y parejas. Ofrecemos psicoterapia individual, de pareja y de familia; atendemos problemas de aprendizaje y conductas.</p>
-														<a class="seguir" href="servicios-principales-centro-psicoterapéutico.html" title=""><span>Seguir leyendo</span></a>
-													</figcaption>
-												</div>
-											</div>
-										</figure>
-										<figure class="modulo-novedad e-nove">
-											<div class="row">
-												<div class="col-xs-12 col-md-4 text-center">
-													<a class="modulo-novedad__imagen" href="#" class="img" title="Gestor de Pastoral Vocacional">
-														<img src="{$SERVER_IMG}servicios/home-seccion-destacada2.jpg" width="377" alt="" class="img-responsive margen">
-													</a>
-												</div>
-												<div class="col-xs-12 col-md-8">
-													<figcaption class="modulo-novedad__texto">
-														<h2><a href="#" title="Gestor de Pastoral Vocacional">Formación  y Capacitación</a></h2>
-														<span class="novedad__fecha"><strong>PROVINCIA |  2016</strong></span>
-														<hr class="gris-corta">
-														<p>Promovemos y realizamos actividades formativas y de sensibilización en Salud Mental con un enfoque holístico y multidisciplinario, destinadas a estudiantes universitarios y profesionales sanitarios.</p>
-														<a class="seguir" href="#" title="Gestor de Pastoral Vocacional"><span>Seguir leyendo</span></a>
-													</figcaption>
-												</div>
-											</div>
-										</figure>
-										<figure class="modulo-novedad e-nove">
-											<div class="row">
-												<div class="col-xs-12 col-md-4 text-center">
-													<a class="modulo-novedad__imagen" href="#" class="img" title="Gestor de Pastoral Vocacional">
-														<img src="{$SERVER_IMG}servicios/servicios-deport-center.jpg" width="377" alt="" class="img-responsive margen">
-													</a>
-												</div>
-												<div class="col-xs-12 col-md-8">
-													<figcaption class="modulo-novedad__texto">
-														<h2><a href="#" title="Gestor de Pastoral Vocacional">Depor Center San Juan de Dios</a></h2>
-														<span class="novedad__fecha"><strong>PROVINCIA |  2016</strong></span>
-														<hr class="gris-corta">
-														<p>Alquilamos canchas de grass sintético, con una infraestructura amplia, moderna y adecuada para jugar al fútbol. Nuestros campos deportivos también se ponen a disposición de los clientes para la celebración de eventos recreativos, sociales y deportivos.</p>
-														<a class="seguir" href="#" title="Gestor de Pastoral Vocacional"><span>Seguir leyendo</span></a>
-													</figcaption>
-												</div>
-											</div>
-										</figure>
-									</div>
-								</div>                 
-							</div>
-						</div>
-					</div>								
-				</div>
-			</section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 col-md-push-9">
+                    <aside class="mas-datos">
+                        <h3>Central Telefónica</h3>
+                        <a class="telefono" href="#">+51 <span>(073) 343592</span></a>
+                        <a class="telefono" href="#">+51 <span>(073) 343677</span></a>
+                        <hr class="blanca-corta">
+                        <h3>Horarios</h3>
+                        <ul class="bullet2">
+                            <li><a><strong>Consulta Externa</strong></a></li>
+                            <table style="width:100%" class="table-horario">
+                                    <tr>
+                                        <td>Lunes a Viernes</td>
+                                        <td>08:00 am a 1:00 pm</td> 
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2:00 pm a 16:00 pm</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Sábados</td>
+                                        <td>08:00 am a 12:00 pm</td> 
+                                    </tr>
+                            </table><br>
+                            <li><a><strong>Visita Hospitalización</strong></a></li>
+                            <p style="margin-left: 1em; color: #fff;">Todos los días de 15:00 a 17:00 pm. (Luego de transcurridos 15 días de hospitalización. Previa autorización médica).</p><br>
+                            <li><a><strong>Farmacia</strong></a></li>
+                            <table style="width:100%" class="table-horario">
+                                    <tr>
+                                            <td>Lunes a Viernes</td>
+                                            <td>08:00 am a 1:00 pm</td> 
+                                    </tr>
+                                    <tr>
+                                            <td></td>
+                                            <td>2:00 pm a 4:00 pm</td> 
+                                    </tr>
+                                    <tr>
+                                            <td>Sábados</td>
+                                            <td>08:00 am a 12:00 pm</td> 
+                                    </tr>
+                            </table>
+                        </ul>									
+                    </aside>
+                    <aside class="direccion">
+                        <h3>Dirección</h3>
+                        <p>Av. Cayetano Heredia 210 l Castilla l Piura l Perú</p>
+                    </aside>
+                    <section class="redes">
+                        <div class="siguenos clearfix">
+                            <h3 class="pull-left">SÍGUENOS</h3>
+                            <ul class="pull-right">
+                                <li class="fb">
+                                    <a href="https://www.facebook.com/centroderepososjdpiura" target="_blank" title="Síguenos en Facebook"></a>
+                                </li>
+                                <li class="tw">
+                                    <a href="https://twitter.com/crsjdpiura" target="_blank" title="Síguenos en Twitter"></a>
+                                </li>
+                                <li class="yt">
+                                    <a href="https://www.youtube.com/channel/UCtGJmRisNLhgpvR8qxt28oA" target="_blank" title="Síguenos en YouTube"></a>
+                                </li>
+                                <li class="in">
+                                    <a href="https://www.linkedin.com/company/3121795?trk=tyah&trkInfo=tas%3Aorden%20hospital" target="_blank" title="Síguenos en Linked In"></a>
+                                </li>
+                                <li class="issuu">
+                                    <a href="https://issuu.com/septentrional" target="_blank" title="Síguenos en Issuu"></a>
+                                </li>
+                            </ul>
+                        </div>								
+                    </section>
+                </div>
+                {$novedades}
+            </div>								
+        </div>
+    </section>
 			<section class="multimedia">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-md-6">
-							<div class="videos clearfix">
-								<a class="titulo pull-left" href="multimedia-videos.html">Videos</a>
-								<a class="youtube pull-right" href="https://www.youtube.com/channel/UCtGJmRisNLhgpvR8qxt28oA" target="_blank" title=""><span>Canal de youtube</span></a>
-								<div class="marco">
-									<iframe width="100%" height="272" src="https://www.youtube.com/embed/-CbDvz-_MME" frameborder="0" allowfullscreen style="display:compact;"></iframe>
-								</div>
-								<p>Corporativo Centro de reposo San Juan de Dios</p>
-							</div>
-						</div>
-					<div class="col-xs-12 col-md-6">
-						<div class="fotos clearfix text-center">
-							<a class="titulo pull-left" href="multimedia-fotos.html">Fotos</a>
-							<a class="picassa pull-right" href="multimedia-fotos.html" target="_blank" title=""><span>Picassa</span></a>
-							<div id="picassa_home" class="fotos__picassa">
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="videos clearfix">
+                                            <a class="titulo pull-left" href="multimedia-videos.html">Videos</a>
+                                            <a class="youtube pull-right" href="https://www.youtube.com/channel/UCtGJmRisNLhgpvR8qxt28oA" target="_blank" title=""><span>Canal de youtube</span></a>
+                                            <div class="marco">
+                                                <iframe width="100%" height="272" src="https://www.youtube.com/embed/-CbDvz-_MME" frameborder="0" allowfullscreen style="display:compact;"></iframe>
+                                            </div>
+                                            <p>Corporativo Centro de reposo San Juan de Dios</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="fotos clearfix text-center">
+                                            <a class="titulo pull-left" href="multimedia-fotos.html">Fotos</a>
+                                            <a class="picassa pull-right" href="multimedia-fotos.html" target="_blank" title=""><span>Picassa</span></a>
+                                            <div id="picassa_home" class="fotos__picassa"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 			</section>
 			<section>
 				<div class="container">

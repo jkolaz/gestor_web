@@ -26,6 +26,7 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', '4panel_gestor');
 define('DB_CHAR', 'utf8');
+
 define('EMPRESA', 'Web');
 define('template', ROOT.'views/templates');
 define('template_c', ROOT.'views/templates_c');
@@ -35,5 +36,6 @@ define('CSS_PATH', PUBLIC_PATH.'css/');
 define('JS_PATH', PUBLIC_PATH.'js/');
 define('FONTS_PATH', PUBLIC_PATH.'fonts/');
 define('IMG_PATH', PUBLIC_PATH.'images/');
+define('SEDE', 1);
 
 ?>

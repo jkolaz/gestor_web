@@ -37,7 +37,10 @@ class View extends Smarty{
         $this->path_css = CSS_PATH;
         $this->path_js = JS_PATH;
         $this->path_images = IMG_PATH;
-        
+        $this->assign('SERVER_NAME', $this->base_url);
+        $this->assign('SERVER_CSS', $this->path_css);
+        $this->assign('SERVER_JS', $this->path_js);
+        $this->assign('SERVER_IMG', $this->path_images);
     }
 
     //if specified template is cached then display template and exit, otherwise, do nothing.
@@ -67,10 +70,7 @@ class View extends Smarty{
             
             $this->assign("sufix", $this->sufix);
             if($this->maintpl == "main"){
-                $this->assign('SERVER_NAME', $this->base_url);
-                $this->assign('SERVER_CSS', $this->path_css);
-                $this->assign('SERVER_JS', $this->path_js);
-                $this->assign('SERVER_IMG', $this->path_images);
+                
             }
             $html = $this->fetch($page_html, $cache_id);
             $this->assign("content_main", $html);
