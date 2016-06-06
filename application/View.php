@@ -84,6 +84,12 @@ class View extends Smarty{
         $this->assign($var, $html);
     }
     
+    function menu($objMenu){
+        $this->assign('objMenu', $objMenu);
+        $this->include_template("menu", "inc/menu");
+        $this->include_template("menu_footer", "inc/menu_footer");
+    }
+    
     function resp_json($aVars) {
         if (is_array($aVars)) {
             foreach ($aVars as $aVars_id => $aVars_val) {

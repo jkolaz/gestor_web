@@ -12,9 +12,12 @@
 abstract class Controller
 {
     protected $_view;
+    protected $_Menu;
     
     public function __construct() {
         $this->_view = new View(new Request);
+        $this->_Menu = $this->menu();
+        $this->_view->menu($this->_Menu);
     }
     
     abstract public function index();
@@ -128,6 +131,11 @@ abstract class Controller
         return true;
     }
     
+    public function menu(){
+        $classMenu = $this->loadModel('menu');
+        $objMenu = $classMenu->permiso();
+        return $objMenu;
+    }
 }
 
 ?>

@@ -29,7 +29,15 @@
                             {/section}
                         </div>
                         <div class="paginado text-center">
-                            <div class="pagination"><span class="disabled">&#xf053;</span><span class="current">1</span><a href="#">2</a><a href="#" class="next">&#xf054;</a></div>
+                            {if isset($paginacion)}{$paginacion}{/if}
+                            {if Session::accesoViewEstricto(array('usuario'))}
+                            <div class="pagination">
+                                <span class="disabled">&#xf053;</span>
+                                <span class="current">1</span>
+                                <a href="#">2</a>
+                                <a href="#" class="next">&#xf054;</a>
+                            </div>
+                            {/if}
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@
 
 define('IS_PRODUCTION', FALSE);
 if(IS_PRODUCTION){
-    define('BASE_URL', 'http://localhost/mvc/');
+    define('BASE_URL', 'http://www.jkolaz.com/sanjuan/');
 }else{
     define('BASE_URL', 'http://www.sanjuandedios.devel/');    
 }
@@ -36,6 +36,6 @@ define('CSS_PATH', PUBLIC_PATH.'css/');
 define('JS_PATH', PUBLIC_PATH.'js/');
 define('FONTS_PATH', PUBLIC_PATH.'fonts/');
 define('IMG_PATH', PUBLIC_PATH.'images/');
-define('SEDE', 1);
+define('SEDE', 2);
 
 ?>

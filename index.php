@@ -3,7 +3,13 @@
 ini_set('display_errors', 1);
 
 define('DS', "/");
-define('ROOT', $_SERVER['DOCUMENT_ROOT'].DS);
+define('IS_PRODUCTION_WEB', FALSE);
+if(IS_PRODUCTION_WEB == TRUE){
+    define('ROOT', $_SERVER['DOCUMENT_ROOT'].DS.'sanjuan'.DS);
+}else{
+    define('ROOT', $_SERVER['DOCUMENT_ROOT'].DS);
+}
+
 define('APP_PATH', ROOT . 'application' . DS);
 try{
     require_once APP_PATH . 'Config.php';

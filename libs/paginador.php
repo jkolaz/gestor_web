@@ -3,7 +3,7 @@
 /*
  * + --------------------------------------------------------- +
  * |  Software:	Paginador - clase PHP para paginar registros   |
- * |   Versión:	1.0											   |
+ * |   Versiï¿½n:	1.0											   |
  * |  Licencia:	Distribuido de forma libre					   |
  * |     Autor:	Jaisiel Delance								   |
  * | Sitio Web:	http://www.dlancedu.com						   |

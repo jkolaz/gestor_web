@@ -6,7 +6,7 @@
                     <h3 class="left">Novedades</h3>
             </div>
             <div class="col-xs-6 text-right">
-               <a class="ver-todas" href="novedades.html">Ver todas<span>+</span></a>
+               <a class="ver-todas" href="{$SERVER_NAME}novedades.html">Ver todas<span>+</span></a>
             </div>
             <div class="col-xs-12">
                 {section name=id loop=$objNovedad}
@@ -25,7 +25,7 @@
                                 <span class="novedad__fecha"><strong>PROVINCIA | 2016</strong></span>
                                 <hr class="gris-corta">
                                 <p>{$objNovedad[id].nov_subtitulo}</p>
-                                <a class="seguir" href="servicios-principales-centro-psicoterapéutico.html" title=""><span>Seguir leyendo</span></a>
+                                <a class="seguir" href="{$SERVER_NAME}novedades/detalle/{$objNovedad[id].nov_id}.html" title=""><span>Seguir leyendo</span></a>
                             </figcaption>
                         </div>
                     </div>

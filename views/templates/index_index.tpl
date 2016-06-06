@@ -4,10 +4,13 @@
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-md-push-9">
                     <aside class="mas-datos">
+                        {if $objNumTelf|@count gt 0}
                         <h3>Central Telefónica</h3>
-                        <a class="telefono" href="#">+51 <span>(073) 343592</span></a>
-                        <a class="telefono" href="#">+51 <span>(073) 343677</span></a>
+                            {section name=id loop=$objNumTelf}
+                        <a class="telefono" href="#">+51 <span>{$objNumTelf[id]->st_num}</span></a>
+                            {/section}
                         <hr class="blanca-corta">
+                        {/if}
                         <h3>Horarios</h3>
                         <ul class="bullet2">
                             <li><a><strong>Consulta Externa</strong></a></li>

@@ -23,4 +23,12 @@ class novedadModel extends Model{
         
         return $query->fetchAll();
     }
+    
+    public function getNovedad($id){
+        $sql = "SELECT * FROM gc_novedad WHERE nov_estado = 1 AND nov_sed_id = ".SEDE." and nov_id='{$id}'";
+        
+        $query = $this->_db->query($sql);
+        
+        return $query->fetch(PDO::FETCH_OBJ);
+    }
 }

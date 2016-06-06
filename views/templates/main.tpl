@@ -101,72 +101,7 @@
                             </a>
                         </h1>
                     </div>
-                    <!-- Agrupar los enlaces de navegación, los formularios y cualquier otro elemento que se pueda ocultar al minimizar la barra -->
-                    <div class="col-xs-12 col-sm-9">
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">
-                            <ul class="nav navbar-nav anim-suave">
-                                <li><a href="index.html">Inicio</a></li>
-                                <li class="js-desplegar" aria-haspopup="true">
-                                    <a>Quienes somos</a>
-                                    <div class="js-desplegable desplegable" style="display: none;">
-                                        <ul>
-                                            <li><a href="quienes-somos-presentacion.html">Presentación</a></li>
-                                            <li><a href="quienes-somos-directorio.html">Directorio</a></li>
-                                            <li><a href="quienes-somos-staff-medico.html">Staff Médico</a></li>
-                                            <li><a href="quienes-somos-fundador.html">Fundador</a></li>
-                                            <li><a href="quienes-somos-orden.html">Orden Hospitalaria</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="js-desplegar" aria-haspopup="true">
-                                    <a>Servicios</a>
-                                    <div class="js-desplegable desplegable" style="display: none;">
-                                        <ul>
-                                            <li><a href="servicios-principales-psiquiatria-clinica.html">Psiquiatría Clínica</a></li>
-                                            <li><a href="servicios-principales-programas-adicionales.html">Programas Adiccionales</a></li>
-                                            <li><a href="servicios-principales-centro-psicoterapéutico.html">Centro Psicoterapéutico San Juan de Dios</a></li>
-                                            <li><a href="servicios-principales-consulta-ambulatoria.html">Consulta ambulatoria</a></li>
-                                            <li><a href="servicios-principales-hospitalizacion.html">Hospitalización</a></li>
-                                            <li><a href="servicios-principales-farmacia.html">Farmacia Especializada</a></li>
-                                            <li><a href="servicios-principales-centro-de-dia.html">Centro de Día</a></li>
-                                            <li><a href="servicios-principales-formacion-capacitacion.html">Formación y Capacitación</a></li>
-                                            <li><a href="servicios-principales-convenios.html">Convenios</a></li>
-                                            <li><a href="servicios-principales-deport-center.html">Depor Center</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="js-desplegar" aria-haspopup="true">
-                                    <a>Pastoral</a>
-                                    <div class="js-desplegable desplegable" style="display: none;">
-                                      <ul>
-                                        <li><a href="pastoral-salud-y-social.html">Pastoral de la Salud y Social</a></li>
-                                        <li><a href="pastoral-vocacional.html">Pastoral Vocacional</a></li>                      
-                                      </ul>
-                                    </div>
-                                </li>
-                                <li class="js-desplegar" aria-haspopup="true">
-                                    <a>Únete a nosotros</a>
-                                    <div class="js-desplegable desplegable" style="display: none;">
-                                        <ul>                      
-                                            <li><a href="unete-trabaja-nosotros.html">Trabaja con Nosotros</a></li>
-                                            <li><a href="unete-convocatoria.html">convocatorias</a></li>
-                                            <li><a href="pastoral-voluntariado.html">Voluntariado</a></li>
-                                            <li><a href="pastoral-donaciones.html">Donaciones</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="js-desplegar" aria-haspopup="true">
-                                    <a>Multimedia</a>
-                                    <div class="js-desplegable desplegable" style="display: none;">
-                                        <ul>
-                                            <li><a href="multimedia-fotos.html">Fotos</a></li>
-                                            <li><a href="multimedia-videos.html">Videos</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    {$menu}
                     <nav class="buscador" style="display: none;">
                         <div class="container">
                             <div class="row">
@@ -234,62 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="pie__nav">
-                        <div class="col-xs-12 col-sm-4 col-md-2 text-center">
-                            <h4 class="text-center">Provincia Sudamericana Septentrional</h4>
-                            <a class="boton-web" href="index.html" target="_blank"><i class="fa fa-desktop"></i>Ir a la web</a>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-2">
-                            <h3>Quienes somos</h3>
-                            <ul class="nav-principal">
-                                <li><a href="#">Presentación</a></li>
-                                <li><a href="#">Directorio</a></li>
-                                <li><a href="#">Staff Médico</a></li>
-                                <li><a href="#">Fundador</a></li>
-                                <li><a href="#">Orden Hospitalaria</a></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-2">
-                            <h3>Servicios</h3>
-                            <ul class="nav-principal">
-                                <li><a href="#">Psiquiatría</a></li>
-                                <li><a href="#">Programa de Adicciones</a></li>
-                                <li><a href="#">Centro Psicoterapeutico San Juan de Dios</a></li>
-                                <li><a href="#">Consulta Ambulatoria</a></li>
-                                <li><a href="#">Hospitalización</a></li>
-                                <li><a href="#">Farmacia Especializada</a></li>
-                                <li><a href="#">Centro de Día</a></li>
-                                <li><a href="#">Formación y Capacitación</a></li>
-                                <li><a href="#">Convenios</a></li>
-                                <li><a href="#">Depor Center</a></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-2">
-                            <h3>Pastoral</h3>
-                            <ul class="nav-principal">
-                                <li><a href="#">Pastoral de la Salud y Social</a></li>
-                      		<li><a href="#">Pastoral Vocacional</a></li>
-                                <li><a href="#">Voluntariado</a></li> 	
-                                <li><a href="#">Donaciones</a></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-2">
-                            <h3>Únete a nosotros</h3>
-                            <ul class="nav-principal">
-                                <li><a href="#">Trabaja con Nosotros</a></li>
-                                <li><a href="#">Convocatorias</a></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-2">
-                            <h3>Multimedia</h3>
-                            <ul class="nav-principal">
-                                <li><a href="#">Fotos</a></li>
-                                <li><a href="#">Videos</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                {$menu_footer}
             </div>
 	</footer>
 	<div class="pie__copyright">
