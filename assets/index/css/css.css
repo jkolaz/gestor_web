@@ -1,0 +1,150 @@
+.fondo{
+	background-color: #065187;
+}
+.fondologo{
+
+	position: fixed;
+	left: 50%;
+}
+
+.logo{
+	display: block;
+    width: 313px;
+    height: 69px;
+    background: url(../img/logo-home.png) no-repeat left top;
+    float: none;
+	margin-top: 30px;
+}
+
+.bloquesleft{
+	padding: 0px; 
+	left: 7px;
+}
+
+.bloquesright{
+	padding: 0px; 
+	left: 7px; 
+	padding-right: 7px;
+}
+
+.bloqueimg{
+	padding: 0px; 
+	padding-right: 7px; 
+	padding-bottom: 7px;
+}
+
+.bloquefila2left{
+	padding: 0px; 
+	padding-right: 3.5px; 
+	padding-top: 7px;
+}
+.bloquefila2left img{
+	height: 175.14px;
+}
+
+.bloquefila2right{
+	padding: 0px; 
+	padding-left: 3.5px; 
+	padding-top: 7px;
+}
+.bloquefila2right img{
+	height: 175.14px;
+}
+
+.bloquefila3{
+	padding: 0px; 
+	padding-top: 7px;
+	width: 100%;
+}
+.bloquefila3 img{
+	height: 175.14px;
+	width: 100%;
+}
+
+.pais{
+	padding: 0px; 
+	padding-left: 9px;
+	margin-top: 5px;
+}
+.pais-color{
+	background-color: #6a6e82;
+}
+
+.pais-bandera{
+	padding: 0px; 
+	margin: 0px; 
+	width: 48px; 
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.cuerpo-texto-bandera{
+	padding: 0px; 
+	margin: 0px; 
+	text-transform: uppercase;
+}
+.cuerpo-texto-bandera p{
+	padding: 0px; 
+	margin: 0px; 
+	margin-top: 15px;
+	font: 400 16px/12px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+}
+.cuerpo-texto-bandera h2{
+	padding: 0px; 
+	margin: 0px; 
+	width: 180px;
+	color: #ffffff;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.pais-pie{
+	clear: both;
+	width: 85%;
+	margin-left: 7%;
+	padding-bottom: 25px;
+}
+
+
+
+.pie-index{
+	color: #ffffff;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 19px;
+}
+
+
+.redessociales {
+	text-align: right;
+	position: relative;
+}
+.redessociales a{
+	color: #fff;
+	font-size: 30px;
+	padding: 3px;
+}
+.redessociales a:hover{
+	background: red;
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .cuerpo-texto-bandera h2{	
+	font-size: 15px;
+	}
+	
+	.pie-index{
+		text-align: center;
+	}
+}
+
+@media (max-width: 1200px) {
+  .cuerpo-texto-bandera h2{	
+	font-size: 15px;
+	}
+	
+	.pie-index{
+		text-align: center;
+	}
+}
+
