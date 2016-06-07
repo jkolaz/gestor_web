@@ -3,26 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/gestor_web/public/css/styles-theme.css</file>
             <file>file:/C:/xampp/htdocs/gestor_web/models/novedadModel.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/views/templates/main.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/Bootstrap.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/views/templates/index_novedades.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/index.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/Config.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/controllers/directorioController.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/models/menuModel.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/models/directorioModel.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/controllers/novedadesController.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/views/templates/inc/menu.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/views/templates/inc/menu_footer.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/models/old/postModel.php</file>
             <file>file:/C:/xampp/htdocs/gestor_web/views/templates/index_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/View.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/models/sedeModel.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/models/menuModel.php</file>
             <file>file:/C:/xampp/htdocs/gestor_web/controllers/indexController.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/views/templates/directorio_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/Controller.php</file>
         </group>
     </open-files>
 </project-private>

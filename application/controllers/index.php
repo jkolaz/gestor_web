@@ -18,7 +18,11 @@ class Index extends CI_Controller{
     }
     
     public function index(){
+        $this->load->model('region_model', 'region');
+        $objRegion = $this->region->getAll();
+        
         $this->smartyci->maintpl = 'mainClear';
+        $this->smartyci->assign('objRegion', $objRegion);
         $this->smartyci->show_page();
     }
 }

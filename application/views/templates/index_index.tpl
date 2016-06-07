@@ -135,40 +135,35 @@
 				  </div>
 			</div>			
 		</div>
+                {if $objRegion|@count gt 0}
 		<div class="row">
-			<div class="col-xs-6 col-lg-3 pais">
-				<div class="pais-color">
-					<div class="col-xs-12 col-lg-12">
-						<label>
-							<div class="col-xs-6 col-lg-6 pais-bandera">
-								<img src="{$SERVER_APP_ASSETS}index/img/peru.png" class="left block">
-							</div>
-							<div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-								<p>Centros en<br><h2 style="padding: 0px; margin: 0px; width: 180px;">Perú</h2></p>
-							</div>
-						</label>
-					</div>
-					<div class="pais-pie">
-						<select class="form-control mb-md" onchange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
-							<option selected="" disabled="">Seleccione un Centro</option>
-							<option value="http://www.sanjuandedios.pe/Piura/">Piura</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-						</select>
-					</div>
-					<!-- 
-					<div class="pais-pie">
-						<select class="form-control mb-md" onchange="url(this.value);">url(this.value);
-							<option selected="" disabled="">Seleccione un Centro</option>
-							<option value="http://www.sanjuandedios.pe/Piura/">Piura</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-						</select>
-					</div>
-					-->
-				</div>
-			</div>
-			<div class="col-xs-6 col-lg-3 pais">
+                    {section name=id loop=$objRegion}
+                    <div class="col-xs-6 col-lg-3 pais">
+                        <div class="pais-color">
+                            <div class="col-xs-12 col-lg-12">
+                                <label>
+                                    <div class="col-xs-6 col-lg-6 pais-bandera">
+                                        <img src="{$SERVER_APP_ASSETS}index/img/peru.png" class="left block">
+                                    </div>
+                                    <div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
+                                        <p>Centros en<br><h2 style="padding: 0px; margin: 0px; width: 180px;">{$objRegion[id]->reg_nombre}</h2></p>
+                                    </div>
+                                </label>
+                            </div>
+                            {if $objRegion[id]->sedes|@count gt 0}
+                            <div class="pais-pie">
+                                <select class="form-control mb-md" onchange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                                    <option selected="" disabled="">Seleccione un Centro</option>
+                                    {section name=sed loop=$objRegion[id]->sedes}
+                                    <option value="{$objRegion[id]->sedes[sed]->sed_id}">{$objRegion[id]->sedes[sed]->sed_nombre}</option>
+                                    {/section}
+                                </select>
+                            </div>
+                            {/if}
+                        </div>
+                    </div>
+                    {/section}
+			<!--<div class="col-xs-6 col-lg-3 pais">
 				<div class="pais-color">
 					<div class="col-xs-12 col-lg-12">
 						<label>
@@ -233,9 +228,9 @@
 						</select>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
-	
+                {/if}
 			
 
       <!-- Site footer -->
