@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-07 00:07:30
+<?php /* Smarty version 3.1.27, created on 2016-06-08 14:48:57
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\index_index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:63885756569210ac28_25770513%%*/
+/*%%SmartyHeaderCode:3388575876a90cb290_99760269%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5817031e14773d69c6084c8ff346b0334a3f7a77' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\index_index.tpl',
-      1 => 1465276047,
+      1 => 1465414707,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '63885756569210ac28_25770513',
+  'nocache_hash' => '3388575876a90cb290_99760269',
   'variables' => 
   array (
     'SERVER_APP_ASSETS' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_57565692329c25_18307771',
+  'unifunc' => 'content_575876a9166ba3_20043372',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_57565692329c25_18307771')) {
-function content_57565692329c25_18307771 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_575876a9166ba3_20043372')) {
+function content_575876a9166ba3_20043372 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '63885756569210ac28_25770513';
+$_smarty_tpl->properties['nocache_hash'] = '3388575876a90cb290_99760269';
 ?>
 <!DOCTYPE html>
 <html lang="en">
