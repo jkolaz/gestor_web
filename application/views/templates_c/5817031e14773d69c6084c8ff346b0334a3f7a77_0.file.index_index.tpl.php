@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-09 07:23:31
+<?php /* Smarty version 3.1.27, created on 2016-06-09 15:59:46
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\index_index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:47055758fd53610423_40175442%%*/
+/*%%SmartyHeaderCode:312595759d8c26d5885_90246028%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,28 +9,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5817031e14773d69c6084c8ff346b0334a3f7a77' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\index_index.tpl',
-      1 => 1465449807,
+      1 => 1465505977,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '47055758fd53610423_40175442',
+  'nocache_hash' => '312595759d8c26d5885_90246028',
   'variables' => 
   array (
     'SERVER_APP_ASSETS' => 0,
     'objBanner1' => 0,
     'SERVER_ADMIN_IMG' => 0,
+    'objBanner2' => 0,
     'objBanner3' => 0,
     'objRegion' => 0,
+    'SERVER_APP' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5758fd536b5228_65374448',
+  'unifunc' => 'content_5759d8c2779aa4_00568191',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5758fd536b5228_65374448')) {
-function content_5758fd536b5228_65374448 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5759d8c2779aa4_00568191')) {
+function content_5759d8c2779aa4_00568191 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '47055758fd53610423_40175442';
+$_smarty_tpl->properties['nocache_hash'] = '312595759d8c26d5885_90246028';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -116,7 +118,7 @@ index/img/bg_prehome.png">
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_img;?>
 ">
                                     </a>	
@@ -124,7 +126,7 @@ echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_img;?>
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_img;?>
 ">
                                     </a>	
@@ -132,7 +134,7 @@ echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_img;?>
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_img;?>
 ">
                                     </a>	
@@ -140,26 +142,49 @@ echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_img;?>
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[3]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[3]->ban_img;?>
 ">
                                     </a>
 				</div>
                             <?php }?>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-					<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 2px;">
-						<a href="#">
-							<img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
-index/img/bloquec.jpg">
-						</a>						
-					</div>
-					<div class="col-xs-6 col-md-6 " style="padding: 0px; padding-left: 2px;">
-						<a href="#">
-							<img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
-index/img/bloquec.jpg">
-						</a>						
-					</div>
-				</div>
+                            <?php if (count($_smarty_tpl->tpl_vars['objBanner2']->value) > 0) {?>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['id'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['id']);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['name'] = 'id';
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['objBanner2']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['show'] = true;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['loop'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['step'] = 1;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['loop']-1;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['show']) {
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['loop'];
+    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['total'] == 0)
+        $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['show'] = false;
+} else
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['total'] = 0;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['show']):
+
+            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration'] = 1;
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['total'];
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration']++):
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration'] == 1);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['id']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['id']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['total']);
+?>
+                                <div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 2px;">
+                                    <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner2']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->ban_url;?>
+">
+                                        <img class="img-responsive pull-right" style="width: 141px; height: 175px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+echo $_smarty_tpl->tpl_vars['objBanner2']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->ban_img;?>
+">
+                                    </a>						
+                                </div>
+                                <?php endfor; endif; ?>
+                            </div>
+                            <?php }?>
 				<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
 					<a href="#">
 						<img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
@@ -226,7 +251,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['last']       = ($_smar
 ?>
                                     <div class="item <?php if ($_smarty_tpl->getVariable('smarty')->value['section']['id']['index'] == 0) {?>active<?php }?>">
                                         <a href="#">
-                                            <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                            <img class="img-responsive pull-right" style="width: 578px; height: 543px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner3']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->ban_img;?>
 ">	
                                         </a>	
@@ -288,7 +313,7 @@ echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smart
                                 </label>
                             </div>
                             <div class="pais-pie">
-                                <select class="form-control mb-md" onchange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                                <select class="form-control mb-md cbo_sede">
                                     <option selected="" disabled="">Seleccione un Centro</option>
                                     <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['sed'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['sed']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['name'] = 'sed';
@@ -314,7 +339,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['index_next'] = $_smar
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['total']);
 ?>
-                                    <option value="<?php echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->sedes[$_smarty_tpl->getVariable('smarty')->value['section']['sed']['index']]->sed_id;?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->sedes[$_smarty_tpl->getVariable('smarty')->value['section']['sed']['index']]->sed_url;?>
 "><?php echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->sedes[$_smarty_tpl->getVariable('smarty')->value['section']['sed']['index']]->sed_nombre;?>
 </option>
                                     <?php endfor; endif; ?>
@@ -342,26 +367,35 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['sed']['last']       = ($_sma
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php echo '<script'; ?>
+        <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
+        <?php echo '<script'; ?>
 >window.jQuery || document.write('<?php echo '<script'; ?>
  src="../../assets/js/vendor/jquery.min.js"><\/script>')<?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
+        <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
 index/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
+        <?php echo '<script'; ?>
  src="../../assets/js/docs.min.js"><?php echo '</script'; ?>
 >
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <?php echo '<script'; ?>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <?php echo '<script'; ?>
  src="../../assets/js/ie10-viewport-bug-workaround.js"><?php echo '</script'; ?>
 >
-	
-  </body>
+        <?php echo '<script'; ?>
+>
+            var base_url = "<?php echo $_smarty_tpl->tpl_vars['SERVER_APP']->value;?>
+";
+        <?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
+index/js/index.js"><?php echo '</script'; ?>
+>
+    </body>
 </html>
 <?php }
 }

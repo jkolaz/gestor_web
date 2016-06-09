@@ -15,9 +15,20 @@ class Sede extends CI_Controller{
     //put your code here
     public function __construct() {
         parent::__construct();
+        $this->load->model('sede_model', 'sede');
     }
     
-    public function index($sede){
-        $this->smartyci->show_page();
+    public function index($sede=""){
+        if($sede == ""){
+            redirect();
+        }
+        $where['sed_url'] = $sede;
+        $this->sede->getRowByCols($where);
+        if($this->sede->sed_id > 0){
+            $this->smartyci->show_page();
+        }else{
+            redirect();
+        }
+        
     }
 }

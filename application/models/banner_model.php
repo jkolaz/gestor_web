@@ -23,8 +23,11 @@ class Banner_model extends CI_Model{
         self::$_PK = 'ban_id';
     }
     
-    public function getBanner($tipo){
+    public function getBanner($tipo, $limit = 0){
         $sql = "SELECT * FROM gc_banner WHERE ban_tb_id={$tipo} and ban_sed_id=0 and ban_estado=1";
+        if($limit > 0){
+            $sql .= ' LIMIT '.$limit;
+        }
         $query = $this->db->query($sql);
         if($query->num_rows() > 0){
             return $query->result();

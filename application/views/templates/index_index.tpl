@@ -65,37 +65,36 @@
                             {if $objBanner1|@count gt 3}
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="{$objBanner1[0]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[0]->ban_img}">
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="{$SERVER_ADMIN_IMG}{$objBanner1[0]->ban_img}">
                                     </a>	
 				</div>
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="{$objBanner1[1]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[1]->ban_img}">
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[1]->ban_img}">
                                     </a>	
 				</div>
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="{$objBanner1[2]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[2]->ban_img}">
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[2]->ban_img}">
                                     </a>	
 				</div>				
 				<div class="col-xs-6 col-md-6 bloqueimg">
                                     <a href="{$objBanner1[3]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[3]->ban_img}">
+                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="{$SERVER_ADMIN_IMG}{$objBanner1[3]->ban_img}">
                                     </a>
 				</div>
                             {/if}
-				<div class="col-xs-6 col-md-6 bloqueimg">
-					<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 2px;">
-						<a href="#">
-							<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquec.jpg">
-						</a>						
-					</div>
-					<div class="col-xs-6 col-md-6 " style="padding: 0px; padding-left: 2px;">
-						<a href="#">
-							<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquec.jpg">
-						</a>						
-					</div>
-				</div>
+                            {if $objBanner2|@count gt 0}
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                {section name=id loop=$objBanner2}
+                                <div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 2px;">
+                                    <a href="{$objBanner2[id]->ban_url}">
+                                        <img class="img-responsive pull-right" style="width: 141px; height: 175px;" src="{$SERVER_ADMIN_IMG}{$objBanner2[id]->ban_img}">
+                                    </a>						
+                                </div>
+                                {/section}
+                            </div>
+                            {/if}
 				<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
 					<a href="#">
 						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
@@ -114,7 +113,7 @@
                                     {section name=id loop=$objBanner3}
                                     <div class="item {if $smarty.section.id.index eq 0}active{/if}">
                                         <a href="#">
-                                            <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner3[id]->ban_img}">	
+                                            <img class="img-responsive pull-right" style="width: 578px; height: 543px;" src="{$SERVER_ADMIN_IMG}{$objBanner3[id]->ban_img}">	
                                         </a>	
                                     </div>
                                     {/section}
@@ -148,10 +147,10 @@
                                 </label>
                             </div>
                             <div class="pais-pie">
-                                <select class="form-control mb-md" onchange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                                <select class="form-control mb-md cbo_sede">
                                     <option selected="" disabled="">Seleccione un Centro</option>
                                     {section name=sed loop=$objRegion[id]->sedes}
-                                    <option value="{$objRegion[id]->sedes[sed]->sed_id}">{$objRegion[id]->sedes[sed]->sed_nombre}</option>
+                                    <option value="{$objRegion[id]->sedes[sed]->sed_url}">{$objRegion[id]->sedes[sed]->sed_nombre}</option>
                                     {/section}
                                 </select>
                             </div>
@@ -177,12 +176,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="{$SERVER_APP_ASSETS}index/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-	
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="{$SERVER_APP_ASSETS}index/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/docs.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+            var base_url = "{$SERVER_APP}";
+        </script>
+	<script src="{$SERVER_APP_ASSETS}index/js/index.js"></script>
+    </body>
 </html>

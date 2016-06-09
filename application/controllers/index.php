@@ -21,9 +21,9 @@ class Index extends CI_Controller{
         $this->load->model('region_model', 'region');
         $this->load->model('banner_model', 'banner');
         
-        $objBanner1 = $this->banner->getBanner(1);
-        $objBanner2 = $this->banner->getBanner(2);
-        $objBanner3 = $this->banner->getBanner(3);
+        $objBanner1 = $this->banner->getBanner(1, 5);/*600x372*/
+        $objBanner2 = $this->banner->getBanner(2, 2);/*306x380*/
+        $objBanner3 = $this->banner->getBanner(3);/*970x911*/
         
         $objRegion = $this->region->getAll();
         
