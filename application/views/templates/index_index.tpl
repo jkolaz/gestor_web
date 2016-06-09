@@ -61,27 +61,29 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-lg-6 bloquesleft">				
+			<div class="col-xs-12 col-lg-6 bloquesleft">
+                            {if $objBanner1|@count gt 3}
 				<div class="col-xs-6 col-md-6 bloqueimg">
-					<a href="#">
-						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
-					</a>	
+                                    <a href="{$objBanner1[0]->ban_url}" target="_blank">
+                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[0]->ban_img}">
+                                    </a>	
 				</div>
 				<div class="col-xs-6 col-md-6 bloqueimg">
-					<a href="#">
-						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
-					</a>	
+                                    <a href="{$objBanner1[1]->ban_url}" target="_blank">
+                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[1]->ban_img}">
+                                    </a>	
 				</div>
 				<div class="col-xs-6 col-md-6 bloqueimg">
-					<a href="#">
-						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
-					</a>	
+                                    <a href="{$objBanner1[2]->ban_url}" target="_blank">
+                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[2]->ban_img}">
+                                    </a>	
 				</div>				
 				<div class="col-xs-6 col-md-6 bloqueimg">
-					<a href="#">
-						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
-					</a>
+                                    <a href="{$objBanner1[3]->ban_url}" target="_blank">
+                                        <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner1[3]->ban_img}">
+                                    </a>
 				</div>
+                            {/if}
 				<div class="col-xs-6 col-md-6 bloqueimg">
 					<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 2px;">
 						<a href="#">
@@ -100,57 +102,51 @@
 					</a>
 				</div>
 			</div>
+                        {if $objBanner3|@count gt 0}
 			<div class="col-xs-12 col-lg-6 bloquesright">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<a href="#">
-								<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloqueb.jpg">	
-							</a>	
-						</div>
-						<div class="item">
-							<a href="#">
-								<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloqueb.jpg">	
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloqueb.jpg">	
-							</a>
-						</div>
-					</div>
-					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				  </div>
-			</div>			
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    {section name=id loop=$objBanner3}
+                                    <li data-target="#carousel-example-generic" data-slide-to="{$smarty.section.id.index}" {if $smarty.section.id.index eq 0}class="active"{/if}></li>
+                                    {/section}
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    {section name=id loop=$objBanner3}
+                                    <div class="item {if $smarty.section.id.index eq 0}active{/if}">
+                                        <a href="#">
+                                            <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}{$objBanner3[id]->ban_img}">	
+                                        </a>	
+                                    </div>
+                                    {/section}
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+			</div>
+                        {/if}
 		</div>
                 {if $objRegion|@count gt 0}
 		<div class="row">
                     {section name=id loop=$objRegion}
                     <div class="col-xs-6 col-lg-3 pais">
                         <div class="pais-color">
+                            {if $objRegion[id]->sedes|@count gt 0}
                             <div class="col-xs-12 col-lg-12">
                                 <label>
                                     <div class="col-xs-6 col-lg-6 pais-bandera">
-                                        <img src="{$SERVER_APP_ASSETS}index/img/peru.png" class="left block">
+                                        <img src="{$SERVER_ADMIN_IMG}{$objRegion[id]->reg_bandera}" class="left block">
                                     </div>
                                     <div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
                                         <p>Centros en<br><h2 style="padding: 0px; margin: 0px; width: 180px;">{$objRegion[id]->reg_nombre}</h2></p>
                                     </div>
                                 </label>
                             </div>
-                            {if $objRegion[id]->sedes|@count gt 0}
                             <div class="pais-pie">
                                 <select class="form-control mb-md" onchange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
                                     <option selected="" disabled="">Seleccione un Centro</option>
@@ -163,72 +159,6 @@
                         </div>
                     </div>
                     {/section}
-			<!--<div class="col-xs-6 col-lg-3 pais">
-				<div class="pais-color">
-					<div class="col-xs-12 col-lg-12">
-						<label>
-							<div class="col-xs-6 col-lg-6 pais-bandera">
-								<img src="{$SERVER_APP_ASSETS}index/img/venezuela.png" class="left block">
-							</div>
-							<div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-								<p>Centros en<br><h2>Venezuela</h2></p>
-							</div>
-						</label>
-					</div>
-					<div class="pais-pie">
-						<select class="form-control mb-md">
-							<option selected="" disabled="">Seleccione un Centro</option>
-							<option>Option 1</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-lg-3 pais">
-				<div class="pais-color">
-					<div class="col-xs-12 col-lg-12">
-						<label>
-							<div class="col-xs-6 col-lg-6 pais-bandera">
-								<img src="{$SERVER_APP_ASSETS}index/img/ecuador.png" class="left block">
-							</div>
-							<div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-								<p>Centros en<br><h2>Ecuador</h2></p>
-							</div>
-						</label>
-					</div>
-					<div class="pais-pie">
-						<select class="form-control mb-md">
-							<option selected="" disabled="">Seleccione un Centro</option>
-							<option>Option 1</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-lg-3 pais">
-				<div class="pais-color">
-					<div class="col-xs-12 col-lg-12">
-						<label>
-							<div class="col-xs-6 col-lg-6 pais-bandera">
-								<img src="{$SERVER_APP_ASSETS}index/img/peru.png" class="left block">
-							</div>
-							<div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-								<p>Orden en el<br><h2> Mundo</h2></p>
-							</div>
-						</label>
-					</div>
-					<div class="pais-pie">
-						<select class="form-control mb-md">
-							<option selected="" disabled="">Seleccione un Centro</option>
-							<option>Option 1</option>
-							<option>Option 2</option>
-							<option>Option 3</option>
-						</select>
-					</div>
-				</div>
-			</div>-->
 		</div>
                 {/if}
 			
