@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-15 05:14:23
+<?php /* Smarty version 3.1.27, created on 2016-06-15 17:07:17
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\sede_index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:79415760c80f371596_82413948%%*/
+/*%%SmartyHeaderCode:98265761d1952e9be9_15913911%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,26 +9,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5c250855fe2cbe933c6b6c3ab61ee8b51ea6fae9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\sede_index.tpl',
-      1 => 1465960461,
+      1 => 1466019947,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '79415760c80f371596_82413948',
+  'nocache_hash' => '98265761d1952e9be9_15913911',
   'variables' => 
   array (
     'objNumTelf' => 0,
     'novedades' => 0,
-    'SERVER_IMG' => 0,
+    'SERVER_APP_IMG' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5760c80f3dadf1_36923402',
+  'unifunc' => 'content_5761d19530f190_40350034',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5760c80f3dadf1_36923402')) {
-function content_5760c80f3dadf1_36923402 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5761d19530f190_40350034')) {
+function content_5761d19530f190_40350034 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '79415760c80f371596_82413948';
+$_smarty_tpl->properties['nocache_hash'] = '98265761d1952e9be9_15913911';
 ?>
 <article>
     <section>
@@ -167,7 +167,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['id']['last']       = ($_smar
 								<div class="modulo-home">
 									<a href="servicios-principales-convenios.html" target="_blank">
 										<div class="modulo-home__imagen">
-											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_IMG']->value;?>
+											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 Resp_Social.jpg" alt="">
 											<span class="punta"></span>
 										</div>
@@ -184,7 +184,7 @@ Resp_Social.jpg" alt="">
 								<div class="modulo-home">
 									<a>
 										<div class="modulo-home__imagen">
-											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_IMG']->value;?>
+											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 Resp_Social.jpg" alt="">
 											<span class="punta"></span>
 										</div>
@@ -200,7 +200,7 @@ Resp_Social.jpg" alt="">
 								<div class="modulo-home">
 									<a>
 										<div class="modulo-home__imagen">
-											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_IMG']->value;?>
+											<img class="img-responsive" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 Resp_Social.jpg" alt="">
 											<span class="punta"></span>
 										</div>

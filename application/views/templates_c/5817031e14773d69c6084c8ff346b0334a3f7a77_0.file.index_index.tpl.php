@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-15 03:27:18
+<?php /* Smarty version 3.1.27, created on 2016-06-15 15:24:31
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\index_index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:234505760aef6bea249_08096169%%*/
+/*%%SmartyHeaderCode:14275761b97f1bfd71_35483600%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5817031e14773d69c6084c8ff346b0334a3f7a77' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\index_index.tpl',
-      1 => 1465524942,
+      1 => 1466022267,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '234505760aef6bea249_08096169',
+  'nocache_hash' => '14275761b97f1bfd71_35483600',
   'variables' => 
   array (
     'SERVER_APP_ASSETS' => 0,
@@ -26,13 +26,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5760aef6cecb22_97105664',
+  'unifunc' => 'content_5761b97f273103_59939177',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5760aef6cecb22_97105664')) {
-function content_5760aef6cecb22_97105664 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5761b97f273103_59939177')) {
+function content_5761b97f273103_59939177 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '234505760aef6bea249_08096169';
+$_smarty_tpl->properties['nocache_hash'] = '14275761b97f1bfd71_35483600';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,38 +115,38 @@ index/img/bg_prehome.png">
 		<div class="row">
 			<div class="col-xs-12 col-lg-6 bloquesleft">
                             <?php if (count($_smarty_tpl->tpl_vars['objBanner1']->value) > 3) {?>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_url;?>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[0]->ban_img;?>
 ">
-                                    </a>	
-				</div>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_url;?>
+                                </a>	
+                            </div>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[1]->ban_img;?>
 ">
-                                    </a>	
-				</div>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_url;?>
+                                </a>	
+                            </div>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[2]->ban_img;?>
 ">
-                                    </a>	
-				</div>				
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[3]->ban_url;?>
+                                </a>	
+                            </div>				
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['objBanner1']->value[3]->ban_url;?>
 " target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
 echo $_smarty_tpl->tpl_vars['objBanner1']->value[3]->ban_img;?>
 ">
-                                    </a>
-				</div>
+                                </a>
+                            </div>
                             <?php }?>
                             <?php if (count($_smarty_tpl->tpl_vars['objBanner2']->value) > 0) {?>
                             <div class="col-xs-6 col-md-6 bloqueimg">
@@ -185,12 +185,14 @@ echo $_smarty_tpl->tpl_vars['objBanner2']->value[$_smarty_tpl->getVariable('smar
                                 <?php endfor; endif; ?>
                             </div>
                             <?php }?>
-				<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
-					<a href="#">
-						<img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_ASSETS']->value;?>
-index/img/bloquea.jpg">
-					</a>
-				</div>
+                            
+                            <div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
+                                <a href="#">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;
+echo $_smarty_tpl->tpl_vars['objBanner1']->value[4]->ban_img;?>
+">
+                                </a>
+                            </div>
 			</div>
                         <?php if (count($_smarty_tpl->tpl_vars['objBanner3']->value) > 0) {?>
 			<div class="col-xs-12 col-lg-6 bloquesright">

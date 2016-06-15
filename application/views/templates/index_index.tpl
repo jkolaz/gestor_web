@@ -63,26 +63,26 @@
 		<div class="row">
 			<div class="col-xs-12 col-lg-6 bloquesleft">
                             {if $objBanner1|@count gt 3}
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="{$objBanner1[0]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="{$SERVER_ADMIN_IMG}{$objBanner1[0]->ban_img}">
-                                    </a>	
-				</div>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="{$objBanner1[1]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[1]->ban_img}">
-                                    </a>	
-				</div>
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="{$objBanner1[2]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[2]->ban_img}">
-                                    </a>	
-				</div>				
-				<div class="col-xs-6 col-md-6 bloqueimg">
-                                    <a href="{$objBanner1[3]->ban_url}" target="_blank">
-                                        <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="{$SERVER_ADMIN_IMG}{$objBanner1[3]->ban_img}">
-                                    </a>
-				</div>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="{$objBanner1[0]->ban_url}" target="_blank">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;"  src="{$SERVER_ADMIN_IMG}{$objBanner1[0]->ban_img}">
+                                </a>	
+                            </div>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="{$objBanner1[1]->ban_url}" target="_blank">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[1]->ban_img}">
+                                </a>	
+                            </div>
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="{$objBanner1[2]->ban_url}" target="_blank">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[2]->ban_img}">
+                                </a>	
+                            </div>				
+                            <div class="col-xs-6 col-md-6 bloqueimg">
+                                <a href="{$objBanner1[3]->ban_url}" target="_blank">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[3]->ban_img}">
+                                </a>
+                            </div>
                             {/if}
                             {if $objBanner2|@count gt 0}
                             <div class="col-xs-6 col-md-6 bloqueimg">
@@ -95,11 +95,12 @@
                                 {/section}
                             </div>
                             {/if}
-				<div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
-					<a href="#">
-						<img class="img-responsive pull-right" src="{$SERVER_APP_ASSETS}index/img/bloquea.jpg">
-					</a>
-				</div>
+                            
+                            <div class="col-xs-6 col-md-6" style="padding: 0px; padding-right: 8px; padding-bottom: 6px;">
+                                <a href="#">
+                                    <img class="img-responsive pull-right" style="width: 286px; height: 177px;" src="{$SERVER_ADMIN_IMG}{$objBanner1[4]->ban_img}">
+                                </a>
+                            </div>
 			</div>
                         {if $objBanner3|@count gt 0}
 			<div class="col-xs-12 col-lg-6 bloquesright">
