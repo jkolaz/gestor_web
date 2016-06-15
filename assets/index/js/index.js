@@ -6,7 +6,7 @@
 jQuery(document).ready( function() {
    $('.cbo_sede').change(function(){
         var sede = $(this).val();
-        var url = base_url + "sede/index/"+sede+'.html';
+        var url = base_url + "sede/index/"+sede;
         location.href = url;
    }); 
 });

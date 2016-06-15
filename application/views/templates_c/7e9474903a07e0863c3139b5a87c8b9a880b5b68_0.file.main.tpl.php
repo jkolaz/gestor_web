@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-06 16:00:30
+<?php /* Smarty version 3.1.27, created on 2016-06-15 04:10:43
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:195425755e46ee61069_05791162%%*/
+/*%%SmartyHeaderCode:21855760b92397fe26_71913773%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,30 +9,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1465246828,
+      1 => 1465956642,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '195425755e46ee61069_05791162',
+  'nocache_hash' => '21855760b92397fe26_71913773',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
     'SERVER_APP_CSS' => 0,
     'SERVER_APP_JS' => 0,
-    'SERVER_ADMIN_IMG' => 0,
+    'SERVER_APP' => 0,
     'menu' => 0,
     'content_main' => 0,
+    'SERVER_ADMIN_IMG' => 0,
     'menu_footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5755e46eed06f9_67874535',
+  'unifunc' => 'content_5760b9239ebec7_76188713',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5755e46eed06f9_67874535')) {
-function content_5755e46eed06f9_67874535 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5760b9239ebec7_76188713')) {
+function content_5760b9239ebec7_76188713 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '195425755e46ee61069_05791162';
+$_smarty_tpl->properties['nocache_hash'] = '21855760b92397fe26_71913773';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -150,9 +151,10 @@ jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text
                             </button>
                         </div>
                         <h1 class="pull-left anim-suave">
-                            <a href="index.html">
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP']->value;?>
+">
                                 <span>Centro de reposo San Juan de Dios Piura | Perú</span>
-                                <img class="anim-suave" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                <img class="anim-suave" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
                             </a>
                         </h1>
@@ -180,27 +182,27 @@ logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
                     <div class="slider-principal">
                         <ul>
                             <li>
-                                    <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                    <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea1.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea2.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea3.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea4.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea5.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 slidea6.jpg">
                             </li>
                         </ul>

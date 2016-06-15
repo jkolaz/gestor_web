@@ -41,4 +41,13 @@ class Sede_model extends CI_Model{
             $this->sed_url = $arreglo[0]->sed_url;
         }
     }
+    
+    public function num_telefonos($sede){
+        $sql = "select * from gc_sede_telefono where st_sed_id=".$sede;
+        $query = $this->db->query($sql);
+        if($query->num_rows() > 0){
+            return $query->result();
+        }
+        return NULL;
+    }
 }

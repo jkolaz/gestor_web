@@ -95,6 +95,6 @@ if(IS_PRODUCTION){
 define('SERVER_ADMIN_ASSETS', SERVER_ADMIN.'assets/');
 define('SERVER_ADMIN_IMG', SERVER_ADMIN_ASSETS.'images/upload/');
 define('SERVER_APP_ASSETS', SERVER_APP.'assets/');
-define('SERVER_APP_IMG', SERVER_APP_ASSETS.'img/');
+define('SERVER_APP_IMG', SERVER_APP_ASSETS.'images/');
 define('SERVER_APP_CSS', SERVER_APP_ASSETS.'css/');
 define('SERVER_APP_JS', SERVER_APP_ASSETS.'js/');

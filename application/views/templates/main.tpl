@@ -95,9 +95,9 @@
                             </button>
                         </div>
                         <h1 class="pull-left anim-suave">
-                            <a href="index.html">
+                            <a href="{$SERVER_APP}">
                                 <span>Centro de reposo San Juan de Dios Piura | Perú</span>
-                                <img class="anim-suave" src="{$SERVER_ADMIN_IMG}logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
+                                <img class="anim-suave" src="{$SERVER_APP_IMG}logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
                             </a>
                         </h1>
                     </div>
@@ -123,22 +123,22 @@
                     <div class="slider-principal">
                         <ul>
                             <li>
-                                    <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea1.jpg">
+                                    <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea1.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea2.jpg">
+                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea2.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea3.jpg">
+                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea3.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea4.jpg">
+                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea4.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea5.jpg">
+                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea5.jpg">
                             </li>
                             <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_ADMIN_IMG}slidea6.jpg">
+                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea6.jpg">
                             </li>
                         </ul>
                     </div>

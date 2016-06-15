@@ -83,7 +83,7 @@ class Smartyci extends Smarty{
             
             $this->assign("sufix", $this->sufix);
             if($this->maintpl == "main"){
-                $this->menu($cache_id);
+                //$this->menu($cache_id);
             }
             $html = $this->fetch($page_html, $cache_id);
             $this->assign("content_main", $html);
@@ -115,12 +115,10 @@ class Smartyci extends Smarty{
         //echo $html;
         $this->assign($var, $html);
     }
-    function menu($cache_id){
-//        $adm = $this->ci->session->userdata('user');
-//        $objPermiso = $this->ci->permiso_model->getPermisosByUser($adm);
-//        $this->assign('menu', $objPermiso);
-//        $this->include_template("menu", "inc/menu", $cache_id);
-        $this->assign('menu', '');
-        $this->assign('menu_footer', '');
+    function menu($sede, $cache_id){
+        $objPermiso = $this->ci->menu_model->permiso($sede);
+        $this->assign('objMenu', $objPermiso);
+        $this->include_template("menu", "inc/menu", $cache_id);
+        $this->include_template("menu_footer", "inc/menu_footer", $cache_id);
     }
 }
