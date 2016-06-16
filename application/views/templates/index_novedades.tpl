@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-4 text-center">
                             <a class="modulo-novedad__imagen" href="#" class="img" title="">
-                                <img src="{$SERVER_APP_IMG}servicios/home-seccion-destacada1.jpg" width="377" alt="" class="img-responsive margen">
+                                <img src="{$SERVER_ADMIN_IMG}{$objNovedad[id]->nov_imagen}" width="377" alt="" class="img-responsive margen">
                             </a>
                         </div>
                         <div class="col-xs-12 col-md-8">

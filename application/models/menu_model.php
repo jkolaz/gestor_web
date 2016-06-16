@@ -20,6 +20,7 @@ class Menu_model extends CI_Model{
     }
     
     public function permiso($sede){
+        $obPadre = array();
         $sql = "SELECT
                     gc_menu.men_padre,
                     (SELECT a.men_nombre FROM gc_menu a WHERE a.men_id=gc_menu.men_padre) as men_padre_nombre,
