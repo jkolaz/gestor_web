@@ -20,6 +20,12 @@ class Sede_model extends CI_Model{
     public $sed_estado;
     public $sed_reg_id;
     public $sed_url;
+    public $sed_consulta_lv;
+    public $sed_consulta_s;
+    public $sed_farmacia_lv;
+    public $sed_farmacia_s;
+    public $sed_visita;
+    public $sed_direccion;
     
     public function __construct() {
         parent::__construct();
@@ -39,6 +45,12 @@ class Sede_model extends CI_Model{
             $this->sed_estado = $arreglo[0]->sed_estado;
             $this->sed_reg_id = $arreglo[0]->sed_reg_id;
             $this->sed_url = $arreglo[0]->sed_url;
+            $this->sed_consulta_lv = $arreglo[0]->sed_consulta_lv;
+            $this->sed_consulta_s = $arreglo[0]->sed_consulta_s;
+            $this->sed_farmacia_lv = $arreglo[0]->sed_farmacia_lv;
+            $this->sed_farmacia_s = $arreglo[0]->sed_farmacia_s;
+            $this->sed_visita = $arreglo[0]->sed_visita;
+            $this->sed_direccion = $arreglo[0]->sed_direccion;
         }
     }
     

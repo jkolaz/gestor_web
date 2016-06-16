@@ -143,7 +143,7 @@
                                         <img src="{$SERVER_ADMIN_IMG}{$objRegion[id]->reg_bandera}" class="left block">
                                     </div>
                                     <div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-                                        <p>Centros en<br><h2 style="padding: 0px; margin: 0px; width: 180px;">{$objRegion[id]->reg_nombre}</h2></p>
+                                        <p>{if $smarty.section.id.index eq 3}Orden en el{else}Centros en{/if}<br><h2 style="padding: 0px; margin: 0px; width: 180px;">{$objRegion[id]->reg_nombre}</h2></p>
                                     </div>
                                 </label>
                             </div>

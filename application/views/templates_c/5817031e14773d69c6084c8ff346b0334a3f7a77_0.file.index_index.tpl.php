@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-15 15:24:31
+<?php /* Smarty version 3.1.27, created on 2016-06-16 04:45:00
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\index_index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:14275761b97f1bfd71_35483600%%*/
+/*%%SmartyHeaderCode:10793576212ac133642_50959979%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5817031e14773d69c6084c8ff346b0334a3f7a77' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\index_index.tpl',
-      1 => 1466022267,
+      1 => 1466045094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14275761b97f1bfd71_35483600',
+  'nocache_hash' => '10793576212ac133642_50959979',
   'variables' => 
   array (
     'SERVER_APP_ASSETS' => 0,
@@ -26,13 +26,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5761b97f273103_59939177',
+  'unifunc' => 'content_576212ac38bf93_07162932',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5761b97f273103_59939177')) {
-function content_5761b97f273103_59939177 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_576212ac38bf93_07162932')) {
+function content_576212ac38bf93_07162932 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '14275761b97f1bfd71_35483600';
+$_smarty_tpl->properties['nocache_hash'] = '10793576212ac133642_50959979';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -309,7 +309,7 @@ echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smart
 " class="left block">
                                     </div>
                                     <div class="col-xs-6 col-lg-6 cuerpo-texto-bandera">
-                                        <p>Centros en<br><h2 style="padding: 0px; margin: 0px; width: 180px;"><?php echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->reg_nombre;?>
+                                        <p><?php if ($_smarty_tpl->getVariable('smarty')->value['section']['id']['index'] == 3) {?>Orden en el<?php } else { ?>Centros en<?php }?><br><h2 style="padding: 0px; margin: 0px; width: 180px;"><?php echo $_smarty_tpl->tpl_vars['objRegion']->value[$_smarty_tpl->getVariable('smarty')->value['section']['id']['index']]->reg_nombre;?>
 </h2></p>
                                     </div>
                                 </label>
