@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-15 17:07:17
+<?php /* Smarty version 3.1.27, created on 2016-06-17 05:46:32
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:255875761d195333e32_86961517%%*/
+/*%%SmartyHeaderCode:3883576372989578b1_96274223%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1466019947,
+      1 => 1466135190,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '255875761d195333e32_86961517',
+  'nocache_hash' => '3883576372989578b1_96274223',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
@@ -22,18 +22,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'SERVER_APP' => 0,
     'menu' => 0,
     'content_main' => 0,
-    'SERVER_ADMIN_IMG' => 0,
     'menu_footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5761d19537b8f5_95075966',
+  'unifunc' => 'content_57637298a5b001_79866084',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5761d19537b8f5_95075966')) {
-function content_5761d19537b8f5_95075966 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_57637298a5b001_79866084')) {
+function content_57637298a5b001_79866084 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '255875761d195333e32_86961517';
+$_smarty_tpl->properties['nocache_hash'] = '3883576372989578b1_96274223';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -222,7 +221,7 @@ slidea6.jpg">
                         <div class="col-xs-12 col-md-4">
                             <a class="logo" href="index.html">
                             <span>Centro de reposo San Juan de Dios Piura | Perú</span>
-                                <img class="img-responsive margen" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_ADMIN_IMG']->value;?>
+                                <img class="img-responsive margen" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
 logo_p2.png" width="260" alt="Centro de reposo San Juan de Dios Piura | Perú" style="margin-top: 10px;">
                             </a>
                         </div>

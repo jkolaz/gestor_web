@@ -2,28 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/gestor_web/assets/index/js/index.js</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/views/templates/index_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/index_novedades.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/libs/controllers/indexController.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu_footer.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/menu_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/banner_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/views/templates/index_novedades.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/models/sedeModel.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/main.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/models/novedadModel.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/old/libs/controllers/novedadesController.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/mainClear.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/sede_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/index_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/config/constants.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/sede.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/sede_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/novedad_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/libraries/smartyci.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

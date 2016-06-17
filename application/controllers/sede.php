@@ -58,8 +58,11 @@ class Sede extends CI_Controller{
     }
     
     public function novedades($sede){
+        $where['sed_id'] = $sede;
+        $this->sede->getRowByCols($where);
         $objNovedad = $this->novedad->listarNovedad($sede);
         $this->smartyci->assign('objNovedad', $objNovedad);
+        $this->smartyci->assign('url_sede', $this->sede->sed_url);
         $this->smartyci->include_template('novedades','index_novedades');
     }
 }

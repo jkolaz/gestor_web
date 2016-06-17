@@ -13,19 +13,19 @@
                 <figure class="modulo-novedad e-nove">
                     <div class="row">
                         <div class="col-xs-12 col-md-4 text-center">
-                            <a class="modulo-novedad__imagen" href="#" class="img" title="">
+                            <a class="modulo-novedad__imagen" href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}" class="img" title="">
                                 <img src="{$SERVER_ADMIN_IMG}{$objNovedad[id]->nov_imagen}" width="377" alt="" class="img-responsive margen">
                             </a>
                         </div>
                         <div class="col-xs-12 col-md-8">
                             <figcaption class="modulo-novedad__texto">
                                 <h2>
-                                    <a href="#">{$objNovedad[id]->nov_titulo}</a>
+                                    <a href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}">{$objNovedad[id]->nov_titulo}</a>
                                 </h2>
                                 <span class="novedad__fecha"><strong>PROVINCIA | 2016</strong></span>
                                 <hr class="gris-corta">
                                 <p>{$objNovedad[id]->nov_subtitulo}</p>
-                                <a class="seguir" href="{$SERVER_APP}novedades/detalle/{$objNovedad[id]->nov_id}" title=""><span>Seguir leyendo</span></a>
+                                <a class="seguir" href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}" title=""><span>Seguir leyendo</span></a>
                             </figcaption>
                         </div>
                     </div>
