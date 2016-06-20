@@ -30,9 +30,20 @@ class Novedad_model extends CI_Model{
         self::$_PK = 'nov_id';
     }
     
+    public function listarNovedadAll($sede,$por_pagina, $segmento){
+        $where['nov_estado'] = 1; 
+        $where['nov_sed_id'] = $sede; 
+        $query = $this->db->where($where)->get(self::$_table, $por_pagina, $segmento);
+        if($query->num_rows() > 0){
+            return $query->result();
+        }
+        return NULL;
+    }
+    
     public function listarNovedad($sede){
-        $sql = "SELECT * FROM gc_novedad WHERE nov_estado = 1 AND nov_sed_id = ".$sede;
-        $query = $this->db->query($sql);
+        $where['nov_estado'] = 1; 
+        $where['nov_sed_id'] = $sede; 
+        $query = $this->db->where($where)->get(self::$_table, 3);
         if($query->num_rows() > 0){
             return $query->result();
         }
@@ -56,5 +67,10 @@ class Novedad_model extends CI_Model{
             $this->nov_estado = $arreglo[0]->nov_estado;
             $this->nov_sed_id = $arreglo[0]->nov_sed_id;
         }
+    }
+    
+    public function filas($sede){
+        $consulta = $this->db->where('nov_sed_id', $sede)->get(self::$_table);
+        return  $consulta->num_rows() ;
     }
 }

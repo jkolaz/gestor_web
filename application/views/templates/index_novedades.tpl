@@ -6,7 +6,7 @@
                     <h3 class="left">Novedades</h3>
             </div>
             <div class="col-xs-6 text-right">
-               <a class="ver-todas" href="{$SERVER_APP}novedades">Ver todas<span>+</span></a>
+               <a class="ver-todas" href="{$SERVER_APP}novedades/index/{$url_sede}">Ver todas<span>+</span></a>
             </div>
             <div class="col-xs-12">
                 {section name=id loop=$objNovedad}
