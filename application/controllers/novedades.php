@@ -27,20 +27,20 @@ class Novedades extends CI_Controller{
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
             $this->load->library('pagination');
-            $pages=1;
-            $config['base_url'] = base_url().'sede/index/'.$this->sede->sed_url.'/pagina/';
+            $pages=4;
+            $url_paginacion = base_url().'novedades/index/'.$this->sede->sed_url.'/pagina/';
+            $config['base_url'] = $url_paginacion;
             $config['total_rows'] = $this->novedad->filas($this->sede->sed_id);
             $config['per_page'] = $pages;
-            $config['num_links'] = 20;
-            $config['first_link'] = '<span class="current">1</span>';
-            $config['last_link'] = '<a class="next" href="#"></a>';
+            $config['num_links'] = 2;
             $config["uri_segment"] = 3;
-            $config['next_link'] = '<a class="next" href="#">Siguiente</a>';
-            $config['prev_link'] = '<a class="next" href="#">Anterior</a>';
             $this->pagination->initialize($config);
             $this->smartyci->menu($this->sede->sed_id, uniqid());
-            $objNovedad = $this->novedad->listarNovedadAll($sede, $config['per_page'], $this->uri->segment(5));
-            $this->smartyci->show_page();
+            $objNovedad = $this->novedad->listarNovedadAll($this->sede->sed_id, $config['per_page'], $this->uri->segment(5));
+            $this->smartyci->assign('url_sede', $this->sede->sed_url);
+            $this->smartyci->assign('objNovedad', $objNovedad);
+            $this->smartyci->assign('paginacion', $this->pagination->create_links());
+            $this->smartyci->show_page(NULL, uniqid());
         }
     }
     
@@ -51,10 +51,13 @@ class Novedades extends CI_Controller{
         $where['sed_url'] = $sede;
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
-            $this->novedad->getRow($id);
+            $where1['nov_sed_id'] = $this->sede->sed_id;
+            $where1['nov_id'] = $id;
+            $this->novedad->getRowByCols($where1);
             if($this->novedad->nov_id > 0){
+                $this->smartyci->assign('stdNovedades', $this->novedad);
                 $this->smartyci->menu($this->sede->sed_id, uniqid());
-                $this->smartyci->show_page();
+                $this->smartyci->show_page(NULL, $sede);
             }else{
                 redirect('sede/index/'.$sede);
             }

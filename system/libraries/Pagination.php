@@ -632,7 +632,7 @@ class CI_Pagination {
 
 			$attributes = sprintf('%s %s="%d"', $this->_attributes, $this->data_page_attr, $this->cur_page + 1);
 
-			$output .= $this->next_tag_open.'<a href="'.$base_url.$this->prefix.$i.$this->suffix.'"'.$attributes
+			$output .= $this->next_tag_open.'<a class="next" href="'.$base_url.$this->prefix.$i.$this->suffix.'"'.$attributes
 				.$this->_attr_rel('next').'>'.$this->next_link.'</a>'.$this->next_tag_close;
 		}
 

@@ -69,6 +69,24 @@ class Novedad_model extends CI_Model{
         }
     }
     
+    public function getRowByCols($where = array()){
+        $where['nov_estado'] = 1;
+        $query = $this->db->where($where)->get(self::$_table);
+        if($query->num_rows() > 0){
+            $arreglo = $query->result();
+            $this->nov_id = $arreglo[0]->nov_id;
+            $this->nov_titulo = $arreglo[0]->nov_titulo;
+            $this->nov_subtitulo = $arreglo[0]->nov_subtitulo;
+            $this->nov_youtube = $arreglo[0]->nov_youtube;
+            $this->nov_issuu = $arreglo[0]->nov_issuu;
+            $this->nov_destacada = $arreglo[0]->nov_destacada;
+            $this->nov_imagen = $arreglo[0]->nov_imagen;
+            $this->nov_contenido = $arreglo[0]->nov_contenido;
+            $this->nov_estado = $arreglo[0]->nov_estado;
+            $this->nov_sed_id = $arreglo[0]->nov_sed_id;
+        }
+    }
+    
     public function filas($sede){
         $consulta = $this->db->where('nov_sed_id', $sede)->get(self::$_table);
         return  $consulta->num_rows() ;
