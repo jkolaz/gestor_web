@@ -78,5 +78,7 @@ class Menu_model extends CI_Model{
         $where['men_ruta'] = $menu;
         $where['sed_url'] = $sede;
         
+        $query = $this->
+        
     }
 }
