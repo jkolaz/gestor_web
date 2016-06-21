@@ -49,7 +49,7 @@ class Sede extends CI_Controller{
             $this->smartyci->assign('farmacias', $aFarmaciaS);
             $this->smartyci->assign('objNumTelf', $objNumTelf);
             $this->smartyci->assign('objSede', $this->sede);
-            $this->smartyci->menu($this->sede->sed_id, uniqid());
+            $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_id, uniqid());
             $this->novedades($this->sede->sed_id);
             $this->smartyci->show_page();
         }else{

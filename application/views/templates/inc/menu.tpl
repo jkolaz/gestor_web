@@ -11,7 +11,7 @@
                 <div class="js-desplegable desplegable" style="display: none;">
                     <ul>
                         {section name=i loop=$objMenu[id]->sub_menu}
-                        <li><a href="{$SERVER_APP}{$objMenu[id]->men_padre_ruta}/{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
+                        <li><a href="{$SERVER_APP}seccion/{$url_sede}/{$objMenu[id]->men_padre_ruta}/{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
                         {/section}
                     </ul>
                 </div>

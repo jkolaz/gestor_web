@@ -60,4 +60,23 @@ class Menu_model extends CI_Model{
         }
         return $obPadre;
     }
+    
+    public function verificar_permiso($sede, $menu){
+        $sql = "select 
+                    * 
+                from 
+                    gc_menu 
+                inner join gc_menu_web on gc_menu_web.mw_men_id=gc_menu.men_id 
+                inner join gc_sede on gc_sede.sed_id=gc_menu_web.mw_sed_id 
+                where 
+                    gc_menu.men_ruta = '$menu'  
+                        and gc_sede.sed_url='$sede' ";
+        
+        $where['men_estado'] = 1;
+        $where['sed_estado'] = 1;
+        $where['mw_estado'] = 1;
+        $where['men_ruta'] = $menu;
+        $where['sed_url'] = $sede;
+        
+    }
 }

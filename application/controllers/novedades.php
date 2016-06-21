@@ -35,7 +35,7 @@ class Novedades extends CI_Controller{
             $config['num_links'] = 2;
             $config["uri_segment"] = 3;
             $this->pagination->initialize($config);
-            $this->smartyci->menu($this->sede->sed_id, uniqid());
+            $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
             $objNovedad = $this->novedad->listarNovedadAll($this->sede->sed_id, $config['per_page'], $this->uri->segment(5));
             $this->smartyci->assign('url_sede', $this->sede->sed_url);
             $this->smartyci->assign('objNovedad', $objNovedad);
@@ -56,7 +56,7 @@ class Novedades extends CI_Controller{
             $this->novedad->getRowByCols($where1);
             if($this->novedad->nov_id > 0){
                 $this->smartyci->assign('stdNovedades', $this->novedad);
-                $this->smartyci->menu($this->sede->sed_id, uniqid());
+                $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_id, uniqid());
                 $this->smartyci->show_page(NULL, $sede);
             }else{
                 redirect('sede/index/'.$sede);

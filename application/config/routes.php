@@ -53,5 +53,4 @@ $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['sede/index/(:sede)/(:num)'] = 'sede/index/(:sede)';
-$route['sede/index/(:sede)'] = 'sede/index/(:sede)';
+$route['seccion/(:any)/(:any)/(:any)'] = 'seccion/cuerpo/$1/$2/$3';

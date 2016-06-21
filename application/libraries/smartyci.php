@@ -115,9 +115,10 @@ class Smartyci extends Smarty{
         //echo $html;
         $this->assign($var, $html);
     }
-    function menu($sede, $cache_id){
+    function menu($sede, $url_sede, $cache_id){
         $objPermiso = $this->ci->menu_model->permiso($sede);
         $this->assign('objMenu', $objPermiso);
+        $this->assign('url_sede', $url_sede);
         $this->include_template("menu", "inc/menu", $cache_id);
         $this->include_template("menu_footer", "inc/menu_footer", $cache_id);
     }
