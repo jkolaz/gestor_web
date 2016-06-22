@@ -4,31 +4,19 @@
         <div class="container-chico">
           <div class="row">
             <div class="col-xs-12 col-md-9 col-md-push-3">
-              <h2>Centro de Día</h2>
-              <p>El servicio de Centro de Día tiene como objetivo la reinserción del enfermo mental en la sociedad desde una visión integral, haciendo énfasis en la prevención y promoción de la Salud Mental, desde la apertura de la familia y comunidad en general, creando espacios terapéuticos, educativos e informativos.</p>
-              <p>El Centro de Día constituye una de las innovaciones más interesantes y prometedoras de la asistencia psiquiátrica y Salud Mental caracterizada por el mantenimiento de vínculos familiares del paciente y por el énfasis en las actividades terapéuticas de grupo.</p>
-              <p>Lo más importante es que toda familia busque ayuda profesional, no sólo para entender este tipo de enfermedades; sino también para aceptarla. </p>
-              <p>Es difícil afrontarla, pero hay que hacer entender a las familias que las terapias, el cariño y la comprensión son factores claves para evitar la angustia y seguir adelante ayudando a su ser querido. Para nuestra institución es esencial fortalecer la autoestima y la inclusión social de nuestros usuarios.</p>
+              <h2>{$stdServicio->ser_nombre}</h2>
+              {$stdServicio->ser_descripcion}
               <div class="row">
                 <div class="col-xs-12 col-md-12">
-					<p>Atenciones:</p>
-                  <ul class="con-flecha-rojo">
-                    <li><i class="fa fa-chevron-right"></i>Terapia Ocupacional</li>
-                    <li><i class="fa fa-chevron-right"></i>Terapia Individual</li>
-                    <li><i class="fa fa-chevron-right"></i>Terapia Grupal</li>
-                    <li><i class="fa fa-chevron-right"></i>Actividades de la Vida Diaria.</li>
-                    <li><i class="fa fa-chevron-right"></i>Rehabilitación Cognitiva.</li>
-                    <li><i class="fa fa-chevron-right"></i>Área Afectiva Motivacional</li>
-					<li><i class="fa fa-chevron-right"></i>Músico terapia</li>
-					<li><i class="fa fa-chevron-right"></i>Actividades de Entretenimiento (Deporte, paseos, recreación, entre otros.)</li>
-					<li><i class="fa fa-chevron-right"></i>Habilidades Sociales</li>
-					<li><i class="fa fa-chevron-right"></i>Talleres Manuales</li>
-					<li><i class="fa fa-chevron-right"></i>Huerto y Jardinería</li>
-                  </ul>                 
+                    {if $stdServicio->ser_listado neq ""}
+                        {$stdServicio->ser_listado}
+                    {/if}
                 </div>
+                {if $stdServicio->ser_imagen neq ""}
                 <div class="col-xs-12 col-md-12">
-                  <img class="img-responsive" src="images/servicios/servicios-centro-de-dia-2.jpg" alt="Psiquiatría clínica">
+                    <img class="img-responsive" src="{$SERVER_ADMIN_IMG}{$stdServicio->ser_imagen}" alt="{$stdServicio->ser_nombre}">
                 </div>
+                {/if}
               </div>
               
             </div>

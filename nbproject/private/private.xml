@@ -3,17 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/novedad_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/system/libraries/Pagination.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/novedades_index.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/novedades.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/config/routes.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/models/menu_model.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/config/pagination.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/main.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/novedades_detalle.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/servicios.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_uneteanosotros_convocatoria.tpl</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/models/seccion_model.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/seccion.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_servicios.tpl</file>
         </group>
     </open-files>
 </project-private>
