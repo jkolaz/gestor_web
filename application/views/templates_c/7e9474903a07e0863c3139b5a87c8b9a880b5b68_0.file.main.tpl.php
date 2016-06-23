@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-20 22:25:50
+<?php /* Smarty version 3.1.27, created on 2016-06-23 05:26:07
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:94055768b3be50fbc6_46434588%%*/
+/*%%SmartyHeaderCode:32632576b56cf881ec9_71835676%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1466479293,
+      1 => 1466652365,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '94055768b3be50fbc6_46434588',
+  'nocache_hash' => '32632576b56cf881ec9_71835676',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
@@ -26,13 +26,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5768b3be673396_16528767',
+  'unifunc' => 'content_576b56cf936bb8_26230769',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5768b3be673396_16528767')) {
-function content_5768b3be673396_16528767 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_576b56cf936bb8_26230769')) {
+function content_576b56cf936bb8_26230769 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '94055768b3be50fbc6_46434588';
+$_smarty_tpl->properties['nocache_hash'] = '32632576b56cf881ec9_71835676';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -434,7 +434,8 @@ jquery.pwi/js/jquery.pwi.js" type="text/javascript"><?php echo '</script'; ?>
 
 	<!-- Youtube -->
 	<?php echo '<script'; ?>
- src="js/jquery.youmax/jquery.youmax.js"><?php echo '</script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_JS']->value;?>
+jquery.youmax/jquery.youmax.js"><?php echo '</script'; ?>
 >
 	<?php echo '<script'; ?>
 >

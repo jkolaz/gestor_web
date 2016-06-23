@@ -43,7 +43,7 @@ class Seccion extends CI_Controller{
                         $this->pastoral();
                         break;
                     case 'multimedia':
-                        $this->multimedia();
+                        $this->multimedia($cuerpo);
                         break;
                     default :
                         redirect();
@@ -76,8 +76,18 @@ class Seccion extends CI_Controller{
             $this->smartyci->assign('stdConvocatoria', $objeto[0]);
             switch ($cuerpo){
                 case 'unete-a-nosotros':
-                    $this->smartyci->show_page('seccion_uneteanosotros_convocatoria.tpl');
+                case 'convocatoria':
+                    $this->smartyci->show_page('seccion_uneteanosotros_1.tpl');
                     break;
+                case 'voluntariado':
+                    $this->smartyci->show_page('seccion_uneteanosotros_2.tpl');
+                    break;
+                case 'donaciones':
+                case 'donaciones-en-especie':
+                    $this->smartyci->show_page('seccion_uneteanosotros_3.tpl');
+                    break;
+                default :
+                    $this->redireccionar($sede);
             }
         }else{
             $this->redireccionar($sede);
@@ -88,8 +98,15 @@ class Seccion extends CI_Controller{
         $this->smartyci->show_page('seccion_pastoral.tpl');
     }
     
-    public function multimedia(){
-        $this->smartyci->show_page('seccion_multimedia.tpl');
+    public function multimedia($cuerpo){
+        switch ($cuerpo){
+            case 'fotos':
+                $this->smartyci->show_page('seccion_multimedia_fotos.tpl');
+                break;
+            case 'videos':
+                $this->smartyci->show_page('seccion_multimedia_videos.tpl');
+                break;
+        }
     }
     
     public function redireccionar($sede){

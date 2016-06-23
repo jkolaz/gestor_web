@@ -56,7 +56,7 @@ class Novedades extends CI_Controller{
             $this->novedad->getRowByCols($where1);
             if($this->novedad->nov_id > 0){
                 $this->smartyci->assign('stdNovedades', $this->novedad);
-                $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_id, uniqid());
+                $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
                 $this->smartyci->show_page(NULL, $sede);
             }else{
                 redirect('sede/index/'.$sede);

@@ -2,7 +2,7 @@
     <div class="pie__nav">
         <div class="col-xs-12 col-sm-4 col-md-2 text-center">
             <h4 class="text-center">Provincia Sudamericana Septentrional</h4>
-            <a class="boton-web" href="index.html" target="_blank"><i class="fa fa-desktop"></i>Ir a la web</a>
+            <a class="boton-web" href="{$SERVER_APP}sede/index/{$url_sede}" target="_blank"><i class="fa fa-desktop"></i>Ir a la web</a>
         </div>
         {if $objMenu|@count gt 0}
             {section name=id loop=$objMenu}
@@ -11,7 +11,7 @@
                 {if $objMenu[id]->sub_menu|@count gt 0}
             <ul class="nav-principal">
                     {section name=i loop=$objMenu[id]->sub_menu}
-                <li><a href="{$SERVER_APP}{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
+                <li><a href="{$SERVER_APP}eccion/{$url_sede}/{$objMenu[id]->men_padre_ruta}/{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
                     {/section}
             </ul>
                 {/if}

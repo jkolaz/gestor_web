@@ -338,7 +338,7 @@
 	<!-- FinPWI -->
 
 	<!-- Youtube -->
-	<script src="js/jquery.youmax/jquery.youmax.js"></script>
+	<script src="{$SERVER_APP_JS}jquery.youmax/jquery.youmax.js"></script>
 	<script>
 	//Documentación: http://www.codehandling.com/2013/03/youmax-20-complete-youtube-channel-on.html
 	$('#youmax').youmax({
