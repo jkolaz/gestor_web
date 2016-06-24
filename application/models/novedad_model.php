@@ -23,6 +23,8 @@ class Novedad_model extends CI_Model{
     public $nov_destacada;
     public $nov_imagen;
     public $nov_contenido;
+    public $nov_listado;
+    public $nov_contactenos;
     public function __construct() {
         parent::__construct();
         $this->load->database();
@@ -66,6 +68,8 @@ class Novedad_model extends CI_Model{
             $this->nov_contenido = $arreglo[0]->nov_contenido;
             $this->nov_estado = $arreglo[0]->nov_estado;
             $this->nov_sed_id = $arreglo[0]->nov_sed_id;
+            $this->nov_listado = $arreglo[0]->nov_listado;
+            $this->nov_contactenos = $arreglo[0]->nov_contactenos;
         }
     }
     
@@ -84,6 +88,8 @@ class Novedad_model extends CI_Model{
             $this->nov_contenido = $arreglo[0]->nov_contenido;
             $this->nov_estado = $arreglo[0]->nov_estado;
             $this->nov_sed_id = $arreglo[0]->nov_sed_id;
+            $this->nov_listado = $arreglo[0]->nov_listado;
+            $this->nov_contactenos = $arreglo[0]->nov_contactenos;
         }
     }
     

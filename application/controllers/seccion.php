@@ -37,6 +37,7 @@ class Seccion extends CI_Controller{
                         $this->quienessomos();
                         break;
                     case 'unete-a-nosotros':
+                    case 'donaciones':
                         $this->uneteanosotros($this->sede->sed_id, $cuerpo);
                         break;
                     case 'pastoral';
@@ -84,6 +85,8 @@ class Seccion extends CI_Controller{
                     break;
                 case 'donaciones':
                 case 'donaciones-en-especie':
+                case 'colabora-con-nosotros':
+                case 'programa-de-recaudacion':
                     $this->smartyci->show_page('seccion_uneteanosotros_3.tpl');
                     break;
                 default :
