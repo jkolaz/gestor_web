@@ -122,4 +122,10 @@ class Smartyci extends Smarty{
         $this->include_template("menu", "inc/menu", $cache_id);
         $this->include_template("menu_footer", "inc/menu_footer", $cache_id);
     }
+    
+    function slider($sede, $seccion = 'index'){
+        $objSlider = $this->ci->menu_model->getSlider($sede, $seccion);
+        $this->assign('objSlider', $objSlider);
+        $this->include_template("slider", "inc/slider", uniqid());
+    }
 }

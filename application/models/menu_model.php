@@ -37,7 +37,7 @@ class Menu_model extends CI_Model{
                 GROUP BY gc_menu.men_padre
                 ORDER BY men_padre_nombre";
         $query = $this->db->query($sql);
-        if($query->num_rows()){
+        if($query->num_rows() > 0){
             $obPadre = $query->result();
             foreach ($obPadre as $index=>$value){
                 $sql1 = "SELECT 
@@ -74,5 +74,33 @@ class Menu_model extends CI_Model{
                     ->from('gc_menu')->count_all_results();
         return $query;
         
+    }
+    
+    public function getSlider($sede, $seccion = "index"){
+        $arreglo = array();
+        if ($seccion == 'index'){
+            $where['sli_estado'] = 1;
+            $where['sli_sed_id'] = $sede;
+            $query = $this->db->where($where)->get('gc_slider');
+            if($query->num_rows() > 0){
+                foreach ($query->result() as $value){
+                    $arreglo[] = $value->sli_imagen;
+                }
+            }
+        }else{
+            $where['men_estado'] = 1;
+            $where['men_ruta'] = $seccion;
+            $where['mw_estado'] = 1;
+            $where['mw_sed_id'] = $sede;
+            $query = $this->db->where($where)
+                        ->join('gc_menu', 'gc_menu.men_id=gc_menu_web.mw_men_id')
+                        ->get('gc_menu_web');
+            if($query->num_rows() > 0){
+                foreach ($query->result() as $value){
+                    $arreglo[] = $value->mw_imagen;
+                }
+            }
+        }
+        return $arreglo;
     }
 }

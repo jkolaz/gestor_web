@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-23 05:26:07
+<?php /* Smarty version 3.1.27, created on 2016-06-25 10:17:35
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:32632576b56cf881ec9_71835676%%*/
+/*%%SmartyHeaderCode:8331576e3e1f3b0555_09022460%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1466652365,
+      1 => 1466842526,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32632576b56cf881ec9_71835676',
+  'nocache_hash' => '8331576e3e1f3b0555_09022460',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
@@ -21,18 +21,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'SERVER_APP_JS' => 0,
     'SERVER_APP' => 0,
     'menu' => 0,
+    'slider' => 0,
     'content_main' => 0,
     'menu_footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_576b56cf936bb8_26230769',
+  'unifunc' => 'content_576e3e1f5b2ac3_53465448',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_576b56cf936bb8_26230769')) {
-function content_576b56cf936bb8_26230769 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_576e3e1f5b2ac3_53465448')) {
+function content_576e3e1f5b2ac3_53465448 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '32632576b56cf881ec9_71835676';
+$_smarty_tpl->properties['nocache_hash'] = '8331576e3e1f3b0555_09022460';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -175,39 +176,8 @@ logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
                 </div>
             </nav>
 
-            <!-- jQuery handles to place the header background images -->
-            <div class="slider-principal-contenido">
-                <div class="container">
-                    <div class="slider-principal">
-                        <ul>
-                            <li>
-                                    <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea1.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea2.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea3.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea4.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea5.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
-slidea6.jpg">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <?php echo $_smarty_tpl->tpl_vars['slider']->value;?>
+
         </header>
         <!-- Sección principal -->
 	<main id="main" role="main">  

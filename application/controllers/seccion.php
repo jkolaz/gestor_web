@@ -28,6 +28,7 @@ class Seccion extends CI_Controller{
         if($this->sede->sed_id>0){
             $permiso = $this->menu_model->verificar_permiso($sede, $cuerpo);
             if($permiso > 0){
+                $this->smartyci->slider($this->sede->sed_id, $seccion);
                 $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
                 switch ($seccion){
                     case 'servicios':

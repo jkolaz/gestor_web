@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/novedades.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/main.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_multimedia_fotos.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_uneteanosotros_3.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_uneteanosotros_2.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_uneteanosotros_1.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/seccion_multimedia_videos.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu_footer.tpl</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/seccion.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/config/routes.php</file>
-            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu.tpl</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

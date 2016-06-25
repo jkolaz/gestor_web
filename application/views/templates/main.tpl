@@ -117,33 +117,7 @@
                 </div>
             </nav>
 
-            <!-- jQuery handles to place the header background images -->
-            <div class="slider-principal-contenido">
-                <div class="container">
-                    <div class="slider-principal">
-                        <ul>
-                            <li>
-                                    <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea1.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea2.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea3.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea4.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea5.jpg">
-                            </li>
-                            <li>
-                                  <img class="img-responsive pull-right" src="{$SERVER_APP_IMG}slidea6.jpg">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            {$slider}
         </header>
         <!-- Sección principal -->
 	<main id="main" role="main">  

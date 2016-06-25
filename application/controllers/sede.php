@@ -26,6 +26,7 @@ class Sede extends CI_Controller{
         $where['sed_url'] = $sede;
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
+            $this->smartyci->slider($this->sede->sed_id);
             $objNumTelf = $this->sede->num_telefonos($this->sede->sed_id);
             $aConsultasLV = array();
             if($this->sede->sed_consulta_lv != ""){
