@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-25 10:17:35
+<?php /* Smarty version 3.1.27, created on 2016-06-27 07:41:12
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:8331576e3e1f3b0555_09022460%%*/
+/*%%SmartyHeaderCode:149025770bc785ae506_35722362%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,16 +9,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1466842526,
+      1 => 1467006070,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8331576e3e1f3b0555_09022460',
+  'nocache_hash' => '149025770bc785ae506_35722362',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
     'SERVER_APP_CSS' => 0,
     'SERVER_APP_JS' => 0,
+    'CLASS_BODY' => 0,
     'SERVER_APP' => 0,
     'menu' => 0,
     'slider' => 0,
@@ -27,13 +28,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_576e3e1f5b2ac3_53465448',
+  'unifunc' => 'content_5770bc7861b4d9_21674555',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_576e3e1f5b2ac3_53465448')) {
-function content_576e3e1f5b2ac3_53465448 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5770bc7861b4d9_21674555')) {
+function content_5770bc7861b4d9_21674555 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '8331576e3e1f3b0555_09022460';
+$_smarty_tpl->properties['nocache_hash'] = '149025770bc785ae506_35722362';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -102,7 +103,8 @@ jquery.pwi/css/pwi.css" rel="stylesheet" type="text/css"/>
 jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text/css" media="screen" />
     </head>
 
-    <body id="top" role="document" class="s_home">
+    <body id="top" role="document" class="<?php echo $_smarty_tpl->tpl_vars['CLASS_BODY']->value;?>
+">
 
         <!--PLUGIN FACEBOOK-->
         <div id="fb-root"></div>

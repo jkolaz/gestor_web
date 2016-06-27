@@ -17,6 +17,8 @@ class Seccion extends CI_Controller{
         parent::__construct();
         $this->load->model('sede_model', 'sede');
         $this->load->model('seccion_model', 'seccion');
+        $this->load->model('quienessomos_model', 'quienes_somos');
+        $this->load->model('directorio_model', 'directorio');
     }
     
     public function cuerpo($sede, $seccion, $cuerpo){
@@ -34,8 +36,8 @@ class Seccion extends CI_Controller{
                     case 'servicios':
                         $this->servicios($this->sede->sed_id, $cuerpo);
                         break;
-                    case 'quienessomos':
-                        $this->quienessomos();
+                    case 'quienes-somos':
+                        $this->quienessomos($this->sede->sed_id, $cuerpo);
                         break;
                     case 'unete-a-nosotros':
                     case 'donaciones':
@@ -64,12 +66,41 @@ class Seccion extends CI_Controller{
             $this->smartyci->assign('stdServicio', $objeto[0]);
             $this->smartyci->show_page('seccion_servicios.tpl');
         }else{
-             $this->redireccionar($sede);
+            $this->redireccionar($sede);
         }
     }
     
     public function quienessomos($sede, $cuerpo){
-        $this->smartyci->show_page('seccion_quienessomos.tpl');
+        switch ($cuerpo){
+            case 'presentacion':
+                $objeto = $this->quienes_somos->getPresentacion($sede);
+                if($objeto){
+                    $this->smartyci->assign('stdPresentacion', $objeto);
+                    $this->smartyci->show_page('seccion_quienessomos_presentacion.tpl');
+                }else{
+                    $this->redireccionar($sede);
+                }
+                break;
+            case 'directorio':
+                $objeto = $this->directorio->getDirectorio($sede);
+                $this->smartyci->assign('objDirectorio', $objeto);
+                $this->smartyci->assign('CLASS_BODY', 's_quienes_somos_directorio');
+                $this->smartyci->show_page('seccion_quienessomos_directorio.tpl');
+                break;
+            case 'staffmedico':
+            case 'staff-medico':
+                $objeto = $this->quienes_somos->getEspecialidad($sede);
+                if($objeto){
+                    foreach($objeto as $id =>$value){
+                        $objeto[$id]->medicos = $this->quienes_somos->getMedico($value->se_id);
+                    }
+                }
+                //imprimir($objeto);exit;
+                $this->smartyci->assign('objEspecialidad', $objeto);
+                $this->smartyci->assign('CLASS_BODY', 's_servicios_staff');
+                $this->smartyci->show_page('seccion_quienessomos_staffmedico.tpl');
+                break;
+        }
     }
     
     public function uneteanosotros($sede, $cuerpo){

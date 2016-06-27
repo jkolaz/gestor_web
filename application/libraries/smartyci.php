@@ -32,6 +32,7 @@ class Smartyci extends Smarty{
     var $wizard = 0;
     var $formulario = 0;
     var $form = 0;
+    var $class_body = 's_home';
     
     public function __construct(){
         parent::__construct();
@@ -52,7 +53,7 @@ class Smartyci extends Smarty{
         $this->assign("SERVER_APP_CSS", SERVER_APP_CSS);
         $this->assign("SERVER_APP_JS", SERVER_APP_JS);
         $this->assign("SERVER_ADMIN_IMG", SERVER_ADMIN_IMG);
-        
+        $this->assign("CLASS_BODY", $this->class_body);
         //$this->display_web();
     }
 

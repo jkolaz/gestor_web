@@ -50,7 +50,7 @@
         <link rel="stylesheet" href="{$SERVER_APP_JS}jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text/css" media="screen" />
     </head>
 
-    <body id="top" role="document" class="s_home">
+    <body id="top" role="document" class="{$CLASS_BODY}">
 
         <!--PLUGIN FACEBOOK-->
         <div id="fb-root"></div>
