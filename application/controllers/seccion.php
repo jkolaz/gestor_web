@@ -95,10 +95,14 @@ class Seccion extends CI_Controller{
                         $objeto[$id]->medicos = $this->quienes_somos->getMedico($value->se_id);
                     }
                 }
-                //imprimir($objeto);exit;
                 $this->smartyci->assign('objEspecialidad', $objeto);
                 $this->smartyci->assign('CLASS_BODY', 's_servicios_staff');
                 $this->smartyci->show_page('seccion_quienessomos_staffmedico.tpl');
+                break;
+            case 'ordenhospitalaria':
+            case 'orden-hospitalaria':
+                
+                $this->smartyci->show_page('seccion_quienessomos_ordenhospitalaria.tpl');
                 break;
         }
     }
