@@ -59,4 +59,29 @@ class Quienessomos_model extends CI_Model{
         }
         return $arreglo;
     }
+    
+    public function getFundador($se){
+        $arreglo = array();
+        $where['fun_sed_id'] = $se;
+        $where['fun_estado'] = 1;
+        $query = $this->db->where($where)
+                    ->get('gc_fundador',1);
+        
+        if($query->num_rows() > 0){
+            $arreglo = $query->result();
+        }
+        return $arreglo;
+    }
+    
+    public function getOrdenes($sede, $tipo){
+        $where['ord_estado'] = 1;
+        $where['ord_sed_id'] = $sede;
+        $where['ord_tc_id'] = $tipo;
+        $query = $this->db->where($where)
+                ->get('gc_ordenes', 1);
+        if($query->num_rows() > 0){
+            return $query->result();
+        }
+        return NULL;
+    }
 }

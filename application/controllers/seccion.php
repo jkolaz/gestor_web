@@ -99,9 +99,34 @@ class Seccion extends CI_Controller{
                 $this->smartyci->assign('CLASS_BODY', 's_servicios_staff');
                 $this->smartyci->show_page('seccion_quienessomos_staffmedico.tpl');
                 break;
+            case 'fundador':
+                $objeto = $this->quienes_somos->getFundador($sede);
+                if($objeto){
+                    $this->smartyci->assign('objFundador', $objeto[0]);
+                    $this->smartyci->assign('CLASS_BODY', 's_quienes_somos_fundador');
+                    $this->smartyci->show_page('seccion_quienessomos_fundador.tpl');
+                }else{
+                    $this->redireccionar($sede);
+                }
+                break;
             case 'ordenhospitalaria':
             case 'orden-hospitalaria':
-                
+                /*Principal*/
+                $objPrincipal = $this->quienes_somos->getOrdenes($sede, 1);
+                $this->smartyci->assign('objPrincipal', $objPrincipal);
+                /*Valores*/
+                $objValores = $this->quienes_somos->getOrdenes($sede, 2);
+                $this->smartyci->assign('objValores', $objValores);
+                /*Principios*/
+                $objPrincipios = $this->quienes_somos->getOrdenes($sede, 3);
+                $this->smartyci->assign('objPrincipios', $objPrincipios);
+                /*Estructura*/
+                $objEstructura = $this->quienes_somos->getOrdenes($sede, 4);
+                $this->smartyci->assign('objEstructura', $objEstructura);
+                /*Provincia*/
+                $objProvincia = $this->quienes_somos->getOrdenes($sede, 5);
+                $this->smartyci->assign('objProvincia', $objProvincia);
+                $this->smartyci->assign('CLASS_BODY', 's_quienes_somos_orden');
                 $this->smartyci->show_page('seccion_quienessomos_ordenhospitalaria.tpl');
                 break;
         }

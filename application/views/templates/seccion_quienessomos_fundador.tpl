@@ -4,51 +4,23 @@
             <div class="container-chico">
                 <div class="row">
                     <div class="col-xs-12 col-md-9 col-md-push-3">
-                        <h2>San Juan de Dios</h2>
-                        <p>La tradición sitúa su nacimiento en Montemor-o-Novo (Portugal) un 8 de marzo de 1.495, si bien se cree que pronto se trasladó a España hospedándose en Oropesa (Toledo) en donde se dedicó al cuidado y pastoreo de ganado. Fue su primer oficio.</p>
-                        <p>En dos ocasiones sale de allí para enrolarse en la vida militar, iniciando un proceso de búsqueda que le lleva a regresar a Portugal para después trasladarse a Sevilla y de allí pasar al Norte de África. La etapa más inicial en su vida es confusa y se dispone de pocos datos, si bien se intuye una actitud de búsqueda y el inicio de actos de solidaridad y generosidad a partir de su encuentro con situaciones de personas necesitadas.</p>
-                        <p class="destacado">“Hermanos, haceos bien a vosotros mismos”</p>
-                        <p>Es en 1538, cuando vuelve a la Península y se instala en Granada. Ejerce el oficio de librero que en la época suponía la vida de contacto en la calle y su contacto con libros de tipo religioso. Una fecha especial es el 20 de Enero de 1.539. Tras asistir a la Ermita de los Mártires y escuchar la predicación de Juan de Ávila, se pone en evidencia su proceso de conversión. Una fuerte reacción de disconformidad ante lo que veía en la calle, la pobreza y sufrimiento de muchas personas. Su enajenación es tomada como locura y por este motivo es recluido en el Hospital Real de Granada donde tras contemplar el trato y situación de los enfermos intuye su gran aportación, pide a Dios que cuando salga pueda disponer de un Hospital donde las personas reciban otro tipo de trato.</p>
-                        <p>Con el apoyo y acompañamiento de quien fue después San Juan de Ávila empieza a perfilar su acción hospitalaria, recogiendo y atendiendo a cuantos encuentra en la calle. Los recursos con los que cuenta son su propia persona y las limosnas que consigue de las buenas gentes al grito de su lema: “Hermanos, haceos bien a vosotros mismos”. Era el convencimiento de que al ayudar al otro uno se ayuda también a sí mismo. Su obra caló con rapidez y su estilo de atención a las personas enfermas y desvalidas suscitó que surgieran otras personas que se adherían a su labor, fueron sus primeros compañeros.</p>
-                        <br>
-                        <br>
-                        <h3>Síntesis de La obra de Juan de Dios</h3>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                  <ul class="con-cuadrado-amarillo">
-                                    <li>Desde una especial sensibilidad humano-cristiana y social, sale al encuentro de las personas necesitadas.</li>
-                                    <li>No pone condición alguna para su asistencia, actuando con absoluta universalidad. Todo necesitado tiene derecho a ser atendido.</li>
-                                    <li>Desarrollo de una asistencia cualificada en la medida de sus posibilidades, incorporando criterios y métodos de atención pioneros en la época. Ello llevó a algunos historiadores considerarlo uno de los creadores del hospital moderno.</li>
-                                  </ul>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <ul class="con-cuadrado-amarillo">
-                                    <li>Solicitud de recursos a toda la sociedad, sin distinción. Llamada a la solidaridad sin fronteras.</li>
-                                    <li>Aglutina a un grupo de personas que le ayudan, suplen y dan continuidad a su obra.</li>
-                                    <li>En todo ello existe un hilo conductor claro: la atención integral a las personas enfermas y necesitadas, respetando su dignidad y defendiendo sus derechos.</li>
-                                </ul>
-                            </div>
-                        </div>
-
+                        <h2>{$objFundador->fun_nombre}</h2>
+                        {$objFundador->fun_cuerpo}
                         <div class="datos-interes">
                             <div class="row">
+                                {if $objFundador->fun_datos_interes neq ""}
                                 <div class="col-xs-12 col-md-6">
                                     <div class="datos-interes__texto">
                                         <h3>Datos de interés</h3>
-                                        <ul class="con-cuadrado-blanco">
-                                            <li>Su nombre original era Juan Ciudad Duarte. Fue al ver el fruto de su obra lo que hizo que se le empezara a llamar Juan de Dios.</li>
-                                            <li>Muere el 8 de Marzo de 1.550 en Granada, tras una vida de entrega infatigable a los demás y de dedicación total al servicio de los pobres y de los enfermos.</li>
-                                            <li>Declarado Beato en 1.630 por el papa Urbano VII.</li>
-                                            <li>Proclamado Santo por Alejandro VIII el 1.630.</li>
-                                            <li>San Juan de Dios, es patrón de los enfermos, enfermeros y Hospitales, co-patrón de la ciudad de Granada, así como de los Bomberos.</li>
-                                            <li>El l 1 de Enero de 1.572 San Pio V aprueba la “Congregación de los Hermanos de San Juan de Dios” y en el 1.586 el Papa Sixto V como “Orden Hospitalaria de San Juan de Dios”.</li>
-                                            <li>Después de muerto obtuvo de Dios muchos milagros en favor de sus devotos y el Papa lo declaró santo en 1690. Es Patrono de los que trabajan en hospitales y de los que propagan libros religiosos.</li>
-                                        </ul>
+                                        {$objFundador->fun_datos_interes}
                                     </div>                    
                                 </div>
+                                {/if}
+                                {if $objFundador->fun_imagen neq ""}
                                 <div class="col-xs-12 col-md-6 clearfix">
-                                      <img class="img-responsive" src="images/img_quienes_somos_fundador-1.jpg" alt="Datos de interés">
+                                     <img class="img-responsive" src="{$SERVER_ADMIN_IMG}{$objFundador->fun_imagen}" alt="Datos de interés">
                                 </div>
+                                {/if}
                             </div>
                         </div>
                     </div>
