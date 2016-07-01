@@ -25,6 +25,7 @@ class Novedad_model extends CI_Model{
     public $nov_contenido;
     public $nov_listado;
     public $nov_contactenos;
+    public $nov_fecha_publicacion;
     public function __construct() {
         parent::__construct();
         $this->load->database();
@@ -35,7 +36,7 @@ class Novedad_model extends CI_Model{
     public function listarNovedadAll($sede,$por_pagina, $segmento){
         $where['nov_estado'] = 1; 
         $where['nov_sed_id'] = $sede; 
-        $query = $this->db->where($where)->get(self::$_table, $por_pagina, $segmento);
+        $query = $this->db->where($where)->order_by('nov_fecha_publicacion', 'desc')->get(self::$_table, $por_pagina, $segmento);
         if($query->num_rows() > 0){
             return $query->result();
         }
@@ -45,7 +46,7 @@ class Novedad_model extends CI_Model{
     public function listarNovedad($sede){
         $where['nov_estado'] = 1; 
         $where['nov_sed_id'] = $sede; 
-        $query = $this->db->where($where)->get(self::$_table, 3);
+        $query = $this->db->where($where)->order_by('nov_fecha_publicacion', 'desc')->get(self::$_table, 3);
         if($query->num_rows() > 0){
             return $query->result();
         }
@@ -70,6 +71,7 @@ class Novedad_model extends CI_Model{
             $this->nov_sed_id = $arreglo[0]->nov_sed_id;
             $this->nov_listado = $arreglo[0]->nov_listado;
             $this->nov_contactenos = $arreglo[0]->nov_contactenos;
+            $this->nov_fecha_publicacion = $arreglo[0]->nov_fecha_publicacion;
         }
     }
     
@@ -90,11 +92,23 @@ class Novedad_model extends CI_Model{
             $this->nov_sed_id = $arreglo[0]->nov_sed_id;
             $this->nov_listado = $arreglo[0]->nov_listado;
             $this->nov_contactenos = $arreglo[0]->nov_contactenos;
+            $this->nov_fecha_publicacion = $arreglo[0]->nov_fecha_publicacion;
         }
     }
     
     public function filas($sede){
         $consulta = $this->db->where('nov_sed_id', $sede)->get(self::$_table);
         return  $consulta->num_rows() ;
+    }
+    
+    public function getTresUltimas($sede){
+        $where['nov_sed_id'] = $sede;
+        $where['nov_estado'] = 1;
+        
+        $query = $this->db->where($where)->order_by('nov_fecha_publicacion', 'desc')->get(self::$_table, 3);
+        if($query->num_rows() > 0){
+            return $query->result();
+        }
+        return NULL;
     }
 }

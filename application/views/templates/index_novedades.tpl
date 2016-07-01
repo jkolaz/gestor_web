@@ -22,7 +22,7 @@
                                 <h2>
                                     <a href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}">{$objNovedad[id]->nov_titulo}</a>
                                 </h2>
-                                <span class="novedad__fecha"><strong>PROVINCIA | 2016</strong></span>
+                                <span class="novedad__fecha"><strong>{$region} | {$objNovedad[id]->dia_texto}</strong></span>
                                 <hr class="gris-corta">
                                 <p>{$objNovedad[id]->nov_subtitulo}</p>
                                 <a class="seguir" href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}" title=""><span>Seguir leyendo</span></a>

@@ -11,7 +11,7 @@
                 {if $objMenu[id]->sub_menu|@count gt 0}
             <ul class="nav-principal">
                     {section name=i loop=$objMenu[id]->sub_menu}
-                <li><a href="{$SERVER_APP}eccion/{$url_sede}/{$objMenu[id]->men_padre_ruta}/{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
+                <li><a href="{$SERVER_APP}seccion/{$url_sede}/{$objMenu[id]->men_padre_ruta}/{$objMenu[id]->sub_menu[i]->men_ruta}">{$objMenu[id]->sub_menu[i]->men_nombre}</a></li>
                     {/section}
             </ul>
                 {/if}

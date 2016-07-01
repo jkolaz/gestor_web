@@ -19,6 +19,8 @@ class Seccion extends CI_Controller{
         $this->load->model('seccion_model', 'seccion');
         $this->load->model('quienessomos_model', 'quienes_somos');
         $this->load->model('directorio_model', 'directorio');
+        $this->load->model('pastoral_model', 'pastoral');
+        $this->load->model('novedad_model', 'novedad');
     }
     
     public function cuerpo($sede, $seccion, $cuerpo){
@@ -30,6 +32,8 @@ class Seccion extends CI_Controller{
         if($this->sede->sed_id>0){
             $permiso = $this->menu_model->verificar_permiso($sede, $cuerpo);
             if($permiso > 0){
+                $objBuscador = $this->novedad->getTresUltimas($this->sede->sed_id);
+                $this->smartyci->buscador($objBuscador, $this->sede->sed_url);
                 $this->smartyci->slider($this->sede->sed_id, $seccion);
                 $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
                 switch ($seccion){
@@ -44,7 +48,7 @@ class Seccion extends CI_Controller{
                         $this->uneteanosotros($this->sede->sed_id, $cuerpo);
                         break;
                     case 'pastoral';
-                        $this->pastoral();
+                        $this->pastoral($this->sede->sed_id, $cuerpo);
                         break;
                     case 'multimedia':
                         $this->multimedia($cuerpo);
@@ -141,9 +145,6 @@ class Seccion extends CI_Controller{
                 case 'convocatoria':
                     $this->smartyci->show_page('seccion_uneteanosotros_1.tpl');
                     break;
-                case 'voluntariado':
-                    $this->smartyci->show_page('seccion_uneteanosotros_2.tpl');
-                    break;
                 case 'donaciones':
                 case 'donaciones-en-especie':
                 case 'colabora-con-nosotros':
@@ -158,8 +159,52 @@ class Seccion extends CI_Controller{
         }
     }
     
-    public function pastoral(){
-        $this->smartyci->show_page('seccion_pastoral.tpl');
+    public function pastoral($sede, $cuerpo){
+        switch($cuerpo){
+            case 'pastoraldelasaludysocial':
+            case 'pastoral-de-la-salud-y-social':
+                /*Principal*/
+                $objPrincipal = $this->pastoral->getPastoral($sede, 1);
+                /*Cuerpo*/
+                $objCuerpo = $this->pastoral->getAllPastoral($sede);
+                
+                $this->smartyci->assign('objPrincipal', $objPrincipal);
+                $this->smartyci->assign('objCuerpo', $objCuerpo);
+                $this->smartyci->assign('CLASS_BODY', 's_quienes_somos_orden');
+                $this->smartyci->show_page('seccion_pastoral_salud_social.tpl');
+                break;
+            case 'pastoralvocacional':
+                /*Principal*/
+                $objPrincipal = $this->pastoral->getVocacional($sede, 7);
+                /*Proceso*/
+                $objProceso = $this->pastoral->getVocacional($sede, 8);
+                /*Apostolado*/
+                $objApostolado = $this->pastoral->getVocacional($sede, 9);
+                /*EstiloVida*/
+                $objEstiloVida = $this->pastoral->getVocacional($sede, 10);
+                /*Carisma*/
+                $objCarisma = $this->pastoral->getVocacional($sede, 11);
+                
+                $this->smartyci->assign('objPrincipal', $objPrincipal);
+                $this->smartyci->assign('objProceso', $objProceso);
+                $this->smartyci->assign('objApostolado', $objApostolado);
+                $this->smartyci->assign('objEstiloVida', $objEstiloVida);
+                $this->smartyci->assign('objCarisma', $objCarisma);
+                $this->smartyci->assign('CLASS_BODY', 's_quienes_somos_orden');
+                $this->smartyci->show_page('seccion_pastoral_pastoral_vocacional.tpl');
+                break;
+            case 'voluntariado':
+                $objeto = $this->seccion->getConvocatoria($sede, $cuerpo);
+                if($objeto){
+                    $this->smartyci->assign('stdConvocatoria', $objeto[0]);
+                    $this->smartyci->show_page('seccion_uneteanosotros_2.tpl');
+                }else{
+                    $this->redireccionar($sede);
+                }
+                break;
+            default :
+                $this->redireccionar($sede);
+        }
     }
     
     public function multimedia($cuerpo){

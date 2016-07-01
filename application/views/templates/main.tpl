@@ -55,7 +55,7 @@
         <!--PLUGIN FACEBOOK-->
         <div id="fb-root"></div>
         {literal}
-        <script>
+        <!--<script>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
@@ -63,11 +63,11 @@
                 js.src = "../connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-        </script>
+        </script>-->
         <!--PLUGIN FACEBOOK-->
 
         <!--GOOGLE ANALYTICS-->
-        <script>
+        <!--<script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -76,7 +76,7 @@
           ga('create', 'UA-36852718-53', 'auto');
           ga('send', 'pageview');
 
-        </script>
+        </script>-->
         {/literal}
         <!--GOOGLE ANALYTICS-->
 
@@ -95,7 +95,7 @@
                             </button>
                         </div>
                         <h1 class="pull-left anim-suave">
-                            <a href="{$SERVER_APP}">
+                            <a href="{$SERVER_APP}sede/index/{$url_sede}">
                                 <span>Centro de reposo San Juan de Dios Piura | Perú</span>
                                 <img class="anim-suave" src="{$SERVER_APP_IMG}logo_p2.png" alt="Centro de reposo San Juan de Dios Piura | Perú">
                             </a>
@@ -177,8 +177,6 @@
 			pause: 5000,
 			touchEnabled: true,
 		});
-	});
-    	$(document).ready(function(){
 			$('.slider-novedades').show();
 		  var sliderNovedades = $('.slider-novedades ul').bxSlider({
 			controls: false,
@@ -250,7 +248,7 @@
 	<!-- Fin Menú desplegable -->
 
 	<!--Twitter -->
-	<script type="text/javascript" src="{$SERVER_APP_JS}jquery.twitter/js/twitterFetcher_min.js"></script>
+	<!--<script type="text/javascript" src="{$SERVER_APP_JS}jquery.twitter/js/twitterFetcher_min.js"></script>
     <script type="text/javascript">
 		var twitter = {
 		  "id": '633986030262177792',
@@ -263,7 +261,7 @@
 		  "showInteraction": false
 		};
 		twitterFetcher.fetch(twitter);
-	</script>
+	</script>-->
   	<!--Fin Twitter -->
 
 	<!-- These files are the PWI files -->

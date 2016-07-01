@@ -2,7 +2,7 @@
 <div class="col-xs-12 col-sm-9">
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav anim-suave">
-            <li><a href="{$SERVER_APP}sede/index/{$url_sede}">Inicio</a></li>
+            <!--<li><a href="{$SERVER_APP}sede/index/{$url_sede}">Inicio</a></li>-->
             {if $objMenu|@count gt 0}
                 {section name=id loop=$objMenu}
             <li class="js-desplegar" aria-haspopup="true">

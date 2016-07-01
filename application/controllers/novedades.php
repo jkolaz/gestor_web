@@ -17,6 +17,7 @@ class Novedades extends CI_Controller{
         parent::__construct();
         $this->load->model('sede_model', 'sede');
         $this->load->model('novedad_model', 'novedad');
+        $this->load->model('region_model', 'region');
     }
     
     public function index($sede=""){
@@ -38,6 +39,13 @@ class Novedades extends CI_Controller{
             $this->pagination->initialize($config);
             $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
             $objNovedad = $this->novedad->listarNovedadAll($this->sede->sed_id, $config['per_page'], $this->uri->segment(5));
+            if($objNovedad){
+                foreach ($objNovedad as $index=>$value){
+                    $dia_texto = date_text($value->nov_fecha_publicacion);
+                    $objNovedad[$index]->dia_texto = $dia_texto;
+                }
+            }
+            $this->smartyci->assign('region', $this->region->getNombreRegion($this->sede->sed_reg_id));
             $this->smartyci->assign('url_sede', $this->sede->sed_url);
             $this->smartyci->assign('objNovedad', $objNovedad);
             $this->smartyci->assign('paginacion', $this->pagination->create_links());
@@ -52,7 +60,9 @@ class Novedades extends CI_Controller{
         $where['sed_url'] = $sede;
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
-            $this->smartyci->slider($this->sede->sed_id);
+            $this->smartyci->slider($this->sede->sed_id, 'index');
+            $objBuscador = $this->novedad->getTresUltimas($this->sede->sed_id);
+            $this->smartyci->buscador($objBuscador, $this->sede->sed_url);
             $where1['nov_sed_id'] = $this->sede->sed_id;
             $where1['nov_id'] = $id;
             $this->novedad->getRowByCols($where1);

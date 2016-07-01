@@ -39,4 +39,16 @@ class Region_model extends CI_Model{
         }
         return $aRegion;
     }
+    
+    public function getNombreRegion($id){
+        $where['reg_estado'] = 1;
+        $where['reg_id'] = $id;
+        $query = $this->db->where($where)->select('reg_nombre')->get(self::$_region, 1);
+        $nombre = '';
+        if($query->num_rows() > 0){
+            $result = $query->row();
+            $nombre = $result->reg_nombre;
+        }
+        return $nombre;
+    }
 }

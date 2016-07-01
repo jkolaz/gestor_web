@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-06-28 17:49:04
+<?php /* Smarty version 3.1.27, created on 2016-07-01 07:44:19
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:274345772fee09e8a98_29136734%%*/
+/*%%SmartyHeaderCode:1585957760333529a06_04069533%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1467127241,
+      1 => 1467351858,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '274345772fee09e8a98_29136734',
+  'nocache_hash' => '1585957760333529a06_04069533',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
@@ -21,6 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'SERVER_APP_JS' => 0,
     'CLASS_BODY' => 0,
     'SERVER_APP' => 0,
+    'url_sede' => 0,
     'menu' => 0,
     'slider' => 0,
     'content_main' => 0,
@@ -28,13 +29,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5772fee0a46da1_24301357',
+  'unifunc' => 'content_5776033359bbb1_06965200',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5772fee0a46da1_24301357')) {
-function content_5772fee0a46da1_24301357 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5776033359bbb1_06965200')) {
+function content_5776033359bbb1_06965200 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '274345772fee09e8a98_29136734';
+$_smarty_tpl->properties['nocache_hash'] = '1585957760333529a06_04069533';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -109,7 +110,7 @@ jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text
         <!--PLUGIN FACEBOOK-->
         <div id="fb-root"></div>
         
-        <?php echo '<script'; ?>
+        <!--<?php echo '<script'; ?>
 >
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -119,11 +120,11 @@ jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         <?php echo '</script'; ?>
->
+>-->
         <!--PLUGIN FACEBOOK-->
 
         <!--GOOGLE ANALYTICS-->
-        <?php echo '<script'; ?>
+        <!--<?php echo '<script'; ?>
 >
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -134,7 +135,7 @@ jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text
           ga('send', 'pageview');
 
         <?php echo '</script'; ?>
->
+>-->
         
         <!--GOOGLE ANALYTICS-->
 
@@ -154,6 +155,7 @@ jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text
                         </div>
                         <h1 class="pull-left anim-suave">
                             <a href="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP']->value;?>
+sede/index/<?php echo $_smarty_tpl->tpl_vars['url_sede']->value;?>
 ">
                                 <span>Centro de reposo San Juan de Dios Piura | Perú</span>
                                 <img class="anim-suave" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_IMG']->value;?>
@@ -252,8 +254,6 @@ jquery.bxslider/jquery.bxslider.min.js"><?php echo '</script'; ?>
 			pause: 5000,
 			touchEnabled: true,
 		});
-	});
-    	$(document).ready(function(){
 			$('.slider-novedades').show();
 		  var sliderNovedades = $('.slider-novedades ul').bxSlider({
 			controls: false,
@@ -328,7 +328,7 @@ jquery.bxslider/jquery.bxslider.min.js"><?php echo '</script'; ?>
 	<!-- Fin Menú desplegable -->
 
 	<!--Twitter -->
-	<?php echo '<script'; ?>
+	<!--<?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['SERVER_APP_JS']->value;?>
 jquery.twitter/js/twitterFetcher_min.js"><?php echo '</script'; ?>
 >
@@ -346,7 +346,7 @@ jquery.twitter/js/twitterFetcher_min.js"><?php echo '</script'; ?>
 		};
 		twitterFetcher.fetch(twitter);
 	<?php echo '</script'; ?>
->
+>-->
   	<!--Fin Twitter -->
 
 	<!-- These files are the PWI files -->

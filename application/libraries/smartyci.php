@@ -129,4 +129,15 @@ class Smartyci extends Smarty{
         $this->assign('objSlider', $objSlider);
         $this->include_template("slider", "inc/slider", uniqid());
     }
+    
+    function buscador($objeto, $sede){
+        if($objeto){
+            foreach ($objeto as $index=>$value){
+                $objeto[$index]->dia_text = date_text($value->nov_fecha_publicacion);
+            }
+        }
+        $this->assign('sede', $sede);
+        $this->assign('objeto', $objeto);
+        $this->include_template("buscador", "buscador_novedad", uniqid());
+    }
 }

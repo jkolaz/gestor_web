@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/novedades.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/slider.tpl</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/novedades_detalle.tpl</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu_footer.tpl</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/models/menu_model.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/controllers/seccion.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/views/templates/inc/menu.tpl</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/models/novedad_model.php</file>
+            <file>file:/C:/xampp/htdocs/gestor_web/application/libraries/smartyci.php</file>
+        </group>
     </open-files>
 </project-private>

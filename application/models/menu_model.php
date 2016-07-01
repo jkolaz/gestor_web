@@ -21,10 +21,12 @@ class Menu_model extends CI_Model{
     
     public function permiso($sede){
         $obPadre = array();
+        $aIdPadre = array();
         $sql = "SELECT
                     gc_menu.men_padre,
                     (SELECT a.men_nombre FROM gc_menu a WHERE a.men_id=gc_menu.men_padre) as men_padre_nombre,
-                    (SELECT b.men_ruta FROM gc_menu b WHERE b.men_id=gc_menu.men_padre) as men_padre_ruta
+                    (SELECT b.men_ruta FROM gc_menu b WHERE b.men_id=gc_menu.men_padre) as men_padre_ruta,
+                    (SELECT c.men_orden FROM gc_menu c WHERE c.men_id=gc_menu.men_padre) as men_padre_order
                 FROM 
                     gc_menu, 
                     gc_menu_web 
@@ -35,7 +37,7 @@ class Menu_model extends CI_Model{
                         AND gc_menu_web.mw_sed_id = '".$sede."'
                         AND (SELECT b.men_estado FROM gc_menu b WHERE b.men_id=gc_menu.men_padre) = 1
                 GROUP BY gc_menu.men_padre
-                ORDER BY men_padre_nombre";
+                ORDER BY men_padre_order";
         $query = $this->db->query($sql);
         if($query->num_rows() > 0){
             $obPadre = $query->result();
@@ -92,6 +94,7 @@ class Menu_model extends CI_Model{
             $where['men_ruta'] = $seccion;
             $where['mw_estado'] = 1;
             $where['mw_sed_id'] = $sede;
+            $where['mw_imagen !='] = "";
             $query = $this->db->where($where)
                         ->join('gc_menu', 'gc_menu.men_id=gc_menu_web.mw_men_id')
                         ->get('gc_menu_web');

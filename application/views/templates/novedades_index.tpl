@@ -18,7 +18,7 @@
                                     <div class="col-xs-12 col-md-8">
                                         <figcaption class="modulo-novedad__texto">
                                             <h2><a href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}" title="{$objNovedad[id]->nov_titulo}">{$objNovedad[id]->nov_titulo}</a></h2>
-                                            <span class="novedad__fecha">Perú |  2016</span>
+                                            <span class="novedad__fecha">{$region} | {$objNovedad[id]->dia_texto}</span>
                                             <hr class="gris-corta">
                                             <p>{$objNovedad[id]->nov_subtitulo}</p>
                                             <a class="seguir" href="{$SERVER_APP}novedades/detalle/{$url_sede}/{$objNovedad[id]->nov_id}" title="{$objNovedad[id]->nov_titulo}"><span>Seguir leyendo</span></a>

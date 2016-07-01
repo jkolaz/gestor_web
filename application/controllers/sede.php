@@ -17,6 +17,7 @@ class Sede extends CI_Controller{
         parent::__construct();
         $this->load->model('sede_model', 'sede');
         $this->load->model('novedad_model', 'novedad');
+        $this->load->model('region_model', 'region');
     }
     
     public function index($sede=""){
@@ -26,6 +27,7 @@ class Sede extends CI_Controller{
         $where['sed_url'] = $sede;
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
+            $this->smartyci->assign('url_sede', $this->sede->sed_url);
             $this->smartyci->slider($this->sede->sed_id);
             $objNumTelf = $this->sede->num_telefonos($this->sede->sed_id);
             $aConsultasLV = array();
@@ -62,6 +64,13 @@ class Sede extends CI_Controller{
         $where['sed_id'] = $sede;
         $this->sede->getRowByCols($where);
         $objNovedad = $this->novedad->listarNovedad($sede);
+        if($objNovedad){
+            foreach ($objNovedad as $index=>$value){
+                $dia_texto = date_text($value->nov_fecha_publicacion);
+                $objNovedad[$index]->dia_texto = $dia_texto;
+            }
+        }
+        $this->smartyci->assign('region', $this->region->getNombreRegion($this->sede->sed_reg_id));
         $this->smartyci->assign('objNovedad', $objNovedad);
         $this->smartyci->assign('url_sede', $this->sede->sed_url);
         $this->smartyci->include_template('novedades','index_novedades');
