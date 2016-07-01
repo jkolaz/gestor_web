@@ -48,6 +48,15 @@
         <link rel="stylesheet" href="{$SERVER_APP_JS}jquery.youmax/youmax.css"/>
         <link href="{$SERVER_APP_JS}jquery.pwi/css/pwi.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="{$SERVER_APP_JS}jquery.pwi/js/jquery.fancybox/source/jquery.fancybox8cbb.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript">
+            var switchTo5x=true;
+        </script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        {literal}
+        <script type="text/javascript">
+            stLight.options({publisher: "74cba81d-5aa0-4098-9ce6-e4000c2f6738", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+        </script>
+        {/literal}
     </head>
 
     <body id="top" role="document" class="{$CLASS_BODY}">
