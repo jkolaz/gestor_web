@@ -168,11 +168,12 @@
 	<script src="{$SERVER_APP_JS}jquery.bxslider/jquery.bxslider.min.js"></script>
     <script>
     	$(document).ready(function(){
+            
     		$('.slider-principal').show();
 		  var sliderPrincipal = $('.slider-principal ul').bxSlider({
 			controls: false,
 			pager: false,
-			auto: true,
+			auto: {if $slider_permitido gt 0}true{else}false{/if},
 			speed: 1500,
 			pause: 5000,
 			touchEnabled: true,

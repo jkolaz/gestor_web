@@ -22,6 +22,12 @@
                                 {$stdNovedades->nov_contactenos}
                             </div>
                             {/if}
+                            {if $stdNovedades->nov_issuu neq ""}
+                            <div class="col-xs-12 col-md-12">
+                                <div data-configid="{$stdNovedades->nov_issuu}" style="width: 736px; height:500px" class="issuuembed"></div>
+                                <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+                            </div>
+                            {/if}
                         </div>
               
                     </div>

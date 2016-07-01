@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2016-07-01 07:44:19
+<?php /* Smarty version 3.1.27, created on 2016-07-01 08:04:40
          compiled from "C:\xampp\htdocs\gestor_web\application\views\templates\main.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1585957760333529a06_04069533%%*/
+/*%%SmartyHeaderCode:25967577607f855e9e9_03152043%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7e9474903a07e0863c3139b5a87c8b9a880b5b68' => 
     array (
       0 => 'C:\\xampp\\htdocs\\gestor_web\\application\\views\\templates\\main.tpl',
-      1 => 1467351858,
+      1 => 1467353077,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1585957760333529a06_04069533',
+  'nocache_hash' => '25967577607f855e9e9_03152043',
   'variables' => 
   array (
     'SERVER_APP_IMG' => 0,
@@ -26,16 +26,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'slider' => 0,
     'content_main' => 0,
     'menu_footer' => 0,
+    'slider_permitido' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5776033359bbb1_06965200',
+  'unifunc' => 'content_577607f85db432_66609115',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5776033359bbb1_06965200')) {
-function content_5776033359bbb1_06965200 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_577607f85db432_66609115')) {
+function content_577607f85db432_66609115 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1585957760333529a06_04069533';
+$_smarty_tpl->properties['nocache_hash'] = '25967577607f855e9e9_03152043';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -245,11 +246,12 @@ jquery.bxslider/jquery.bxslider.min.js"><?php echo '</script'; ?>
     <?php echo '<script'; ?>
 >
     	$(document).ready(function(){
+            
     		$('.slider-principal').show();
 		  var sliderPrincipal = $('.slider-principal ul').bxSlider({
 			controls: false,
 			pager: false,
-			auto: true,
+			auto: <?php if ($_smarty_tpl->tpl_vars['slider_permitido']->value > 0) {?>true<?php } else { ?>false<?php }?>,
 			speed: 1500,
 			pause: 5000,
 			touchEnabled: true,

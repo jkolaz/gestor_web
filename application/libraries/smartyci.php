@@ -125,6 +125,11 @@ class Smartyci extends Smarty{
     }
     
     function slider($sede, $seccion = 'index'){
+        $slider_numero = 0;
+        if($seccion == 'index'){
+            $slider_numero = 1;
+        }
+        $this->assign('slider_permitido', $slider_numero);
         $objSlider = $this->ci->menu_model->getSlider($sede, $seccion);
         $this->assign('objSlider', $objSlider);
         $this->include_template("slider", "inc/slider", uniqid());
