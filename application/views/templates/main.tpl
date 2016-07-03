@@ -134,24 +134,7 @@
 	</main>
         <footer class="pie">
             <div class="container">
-                <div class="row">
-                    <div class="pie__logo clearfix text-center">
-                        <div class="col-xs-12 col-md-4">
-                            <a class="logo" href="index.html">
-                            <span>Centro de reposo San Juan de Dios Piura | Perú</span>
-                                <img class="img-responsive margen" src="{$SERVER_APP_IMG}logo_p2.png" width="260" alt="Centro de reposo San Juan de Dios Piura | Perú" style="margin-top: 10px;">
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-md-3 col-md-offset-1">
-                            <p class="text-left"><strong>Dirección</strong><br>
-                            Av Calletano Heredia 210 | Castilla <br>Piura | Perú</p>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <span class="telefono">Teléfono: <a href="#">+51 (01) 2861197</a></span>
-                            <p class="email">E-mail:<a href="#">  contactenos@centrosanjuandedios.com</a></p>
-                        </div>
-                    </div>
-                </div>
+                {$direccion}
                 {$menu_footer}
             </div>
 	</footer>

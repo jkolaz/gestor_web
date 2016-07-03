@@ -28,6 +28,7 @@ class Novedades extends CI_Controller{
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
             $this->smartyci->slider($this->sede->sed_id);
+            $this->smartyci->datos_sede($this->sede->datosSede($this->sede->sed_id));
             $this->load->library('pagination');
             $pages=4;
             $url_paginacion = base_url().'novedades/index/'.$this->sede->sed_url.'/pagina/';
@@ -61,6 +62,7 @@ class Novedades extends CI_Controller{
         $this->sede->getRowByCols($where);
         if($this->sede->sed_id > 0){
             $this->smartyci->slider($this->sede->sed_id, 'index');
+            $this->smartyci->datos_sede($this->sede->datosSede($this->sede->sed_id));
             $objBuscador = $this->novedad->getTresUltimas($this->sede->sed_id);
             $this->smartyci->buscador($objBuscador, $this->sede->sed_url);
             $where1['nov_sed_id'] = $this->sede->sed_id;

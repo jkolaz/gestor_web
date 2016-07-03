@@ -29,6 +29,7 @@ class Sede extends CI_Controller{
         if($this->sede->sed_id > 0){
             $this->smartyci->assign('url_sede', $this->sede->sed_url);
             $this->smartyci->slider($this->sede->sed_id);
+            $this->smartyci->datos_sede($this->sede->datosSede($this->sede->sed_id));
             $objNumTelf = $this->sede->num_telefonos($this->sede->sed_id);
             $aConsultasLV = array();
             if($this->sede->sed_consulta_lv != ""){

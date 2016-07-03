@@ -34,7 +34,8 @@ class Seccion extends CI_Controller{
             if($permiso > 0){
                 $objBuscador = $this->novedad->getTresUltimas($this->sede->sed_id);
                 $this->smartyci->buscador($objBuscador, $this->sede->sed_url);
-                $this->smartyci->slider($this->sede->sed_id, $seccion);
+                $this->smartyci->slider($this->sede->sed_id, $cuerpo);
+                $this->smartyci->datos_sede($this->sede->datosSede($this->sede->sed_id));
                 $this->smartyci->menu($this->sede->sed_id, $this->sede->sed_url, uniqid());
                 switch ($seccion){
                     case 'servicios':

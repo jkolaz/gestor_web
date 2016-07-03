@@ -145,4 +145,9 @@ class Smartyci extends Smarty{
         $this->assign('objeto', $objeto);
         $this->include_template("buscador", "buscador_novedad", uniqid());
     }
+    
+    function datos_sede($sede){
+        $this->assign('sede_datos', $sede);
+        $this->include_template("direccion", "inc/direccion", uniqid());
+    }
 }
